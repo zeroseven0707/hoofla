@@ -168,7 +168,7 @@
                                                     <label for="hr">Harga Reseller</label>
                                                     <div class="input-group mb-3">
                                                         <span class="input-group-text" id="basic-addon1">Rp</span>
-                                                        <input id="hr" type="number" class="form-control" id="hargaReseller" name="hargaReseller" aria-describedby="basic-addon1" value="0">
+                                                        <input id="hr" type="number" class="form-control" name="hargaReseller" aria-describedby="basic-addon1" value="0">
                                                     </div>
                                                 </div>
                                             </div>
@@ -177,7 +177,25 @@
                                                     <label for="hd">Harga Dropshipper</label>
                                                     <div class="input-group mb-3">
                                                         <span class="input-group-text" id="basic-addon1">Rp</span>
-                                                        <input id="hd" type="number" class="form-control" id="hargaDropshipper" name="hargaDropshipper" aria-describedby="basic-addon1" value="0">
+                                                        <input id="hd" type="number" class="form-control" name="hargaDropshipper" aria-describedby="basic-addon1" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="ha">Harga Agen</label>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" id="basic-addon1">Rp</span>
+                                                        <input id="ha" type="number" class="form-control" name="hargaAgen" aria-describedby="basic-addon1" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="hds">Harga Distributor</label>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" id="basic-addon1">Rp</span>
+                                                        <input id="hds" type="number" class="form-control" name="hargaDistributor" aria-describedby="basic-addon1" value="0">
                                                     </div>
                                                 </div>
                                             </div>
@@ -257,12 +275,26 @@ function updateTable() {
     let table = document.getElementById('variantTable');
     table.innerHTML = '';
     let headerRow = table.insertRow();
-    headerRow.innerHTML = '<td>Warna dan Ukuran</td><td>SKU</td><td>Stok</td><td>Harga</td><td>Harga Reseller</td><td>Harga Dropshipper</td>';
+    headerRow.innerHTML = `<td>Warna dan Ukuran</td>
+                           <td>SKU</td>
+                           <td>Stok</td>
+                           <td>Harga</td>
+                           <td>Harga Reseller</td>
+                           <td>Harga Dropshipper</td>
+                           <td>Harga Agent</td>
+                           <td>Harga Distributor</td>`;
 
     warna.forEach(w => {
         size.forEach(s => {
             let row = table.insertRow();
-            row.innerHTML = `<td>Warna<input type="text" value="${w}" class="form-control" name="colors[]"> Size<input type="text" value="${s}" class="form-control" name="sizes[]"></td><td><input type="text" class="form-control" name="sku[]" placeholder="SKU"></td><td><input type="text" class="form-control" name="stok[]" placeholder="Stok"></td><td><input class="form-control" type="text" name="price[]" placeholder="Harga"></td><td><input type="text" class="form-control" name="reseller_price[]" placeholder="Harga Reseller"></td><td><input class="form-control" type="text" name="dropshipper_price[]" placeholder="Harga Dropshipper"></td>`;
+            row.innerHTML = `<td>Warna<input type="text" value="${w}" class="form-control" name="colors[]"> Size<input type="text" value="${s}" class="form-control" name="sizes[]"></td>
+                             <td><input type="text" class="form-control" name="sku[]" placeholder="SKU">
+                             </td><td><input type="text" class="form-control" name="stok[]" placeholder="Stok"></td>
+                             <td><input class="form-control" type="text" name="price[]" placeholder="Harga"></td>
+                             <td><input type="text" class="form-control" name="reseller_price[]" placeholder="Harga Reseller"></td>
+                             <td><input class="form-control" type="text" name="dropshipper_price[]" placeholder="Harga Dropshipper"></td>
+                             <td><input type="text" class="form-control" name="agent_price[]" placeholder="Harga Agent"></td>
+                             <td><input type="text" class="form-control" name="distributor_price[]" placeholder="Harga Distributor"></td>`;
         });
     });
 }

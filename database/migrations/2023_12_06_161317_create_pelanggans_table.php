@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('pelanggans', function (Blueprint $table) {
             $table->id();
-            $table->enum('type',['default','reseller','dropshipper'])->default('default');
+            $table->enum('type',['default','reseller','dropshipper','sub_agen'])->default('default');
             $table->string('name');
             $table->string('no_telp');
             $table->string('email')->nullable();
@@ -29,6 +29,7 @@ return new class extends Migration
             $table->string('contact_lain')->nullable();
             $table->text('address');
             $table->foreignId('reseller_id')->nullable();
+            $table->foreignId('agen_id')->nullable();
             $table->timestamps();
         });
     }

@@ -117,6 +117,8 @@ class DatabaseSeeder extends Seeder
             'sell_this' => 1,
             'reseller_sell_price' => 18000,
             'dropshipper_sell_price' => 18000,
+            'agen_sell_price' => 17000,
+            'distributor_sell_price' => 16000,
             'buy_this' => 1,
             'stock_this' => 1,
             // 'buy_price' => 10000,
@@ -147,7 +149,9 @@ class DatabaseSeeder extends Seeder
                 'size' => 'm',
                 'price' => 20000,
                 'reseller_price' => 18000,
-                'dropshipper_price' => 20000,
+                'dropshipper_price' => 18000,
+                'agen_price' => 17000,
+                'distributor_price' => 16000,
                 'stok' => 100
             ],
             [
@@ -158,7 +162,9 @@ class DatabaseSeeder extends Seeder
                 'size' => 'l',
                 'price' => 20000,
                 'reseller_price' => 18000,
-                'dropshipper_price' => 20000,
+                'dropshipper_price' => 18000,
+                'agen_price' => 17000,
+                'distributor_price' => 16000,
                 'stok' => 100
             ],
             [
@@ -169,7 +175,9 @@ class DatabaseSeeder extends Seeder
                 'size' => 'm',
                 'price' => 20000,
                 'reseller_price' => 18000,
-                'dropshipper_price' => 20000,
+                'dropshipper_price' => 18000,
+                'agen_price' => 17000,
+                'distributor_price' => 16000,
                 'stok' => 100
             ],
             [
@@ -180,7 +188,9 @@ class DatabaseSeeder extends Seeder
                 'size' => 'l',
                 'price' => 20000,
                 'reseller_price' => 18000,
-                'dropshipper_price' => 20000,
+                'dropshipper_price' => 18000,
+                'agen_price' => 17000,
+                'distributor_price' => 16000,
                 'stok' => 100
             ]
         ];

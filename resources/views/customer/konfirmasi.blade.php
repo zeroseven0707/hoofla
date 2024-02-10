@@ -17,7 +17,7 @@
                 </div>
                 <div class="form-box">
                     <label for="no-telp">Metode Pengiriman</label>
-                    <input type="text" value="SiCepat - REG (2 Hari pengiriman)" required>
+                    <input type="text" value="{{ $transaksi->shipping_method }}" required>
                 </div>
                 <div class="informasi-layout-button__form informasi-layout-button__form-shipping">
                     <a href="{{ url('information') }}"><button class="back__btn">Kembali ke Pengiriman</button></a>
@@ -77,7 +77,7 @@
             <div class="sidebar-informasi__total sidebar-informasi__total-main">
                 <div class="sidebar-informasi__total-box">
                     <span>Total</span>
-                    <span>Rp. {{ number_format($total) }} ,-</span>
+                    <span>Rp. {{ number_format($total + $cost) }} ,-</span>
                 </div>
             </div>
         </div>

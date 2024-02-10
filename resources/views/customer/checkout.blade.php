@@ -195,6 +195,10 @@
                             <input type="text" name="no_telp" placeholder="Nomor Telepon Pelanggan">
                         </div>
                         <div class="form-box">
+                            <label for="">NIK</label>
+                            <input type="text" name="nik" placeholder="NIK">
+                        </div>
+                        <div class="form-box">
                             <label for="kelurahan">Kelurahan</label>
                             <input type="text" name="kelurahan" placeholder="Kelurahan Kamu" required>
                         </div>
@@ -233,8 +237,8 @@
                             </div>
                         </div>
                         <div class="form-box">
-                            <label for="">Kontak Lain</label>
-                            <input type="number" name="kontak lain" placeholder="Kontak Lain Pelanggan">
+                            <label for="">Kode Pos</label>
+                            <input type="text" name="post_code" placeholder="Kode Pos">
                         </div>
                         <div class="form-box">
                             <label for="alamat">Alamat Lengkap</label>
@@ -268,6 +272,10 @@
                         <div class="form-box">
                             <label for="">Nomor Telepon</label>
                             <input type="text" name="no_telp" placeholder="Nomor Telepon Pelanggan">
+                        </div>
+                        <div class="form-box">
+                            <label for="">NIK</label>
+                            <input type="text" name="nik" placeholder="NIK">
                         </div>
                         <div class="form-box">
                             <label for="kelurahan">Kelurahan</label>
@@ -308,8 +316,8 @@
                             </div>
                         </div>
                         <div class="form-box">
-                            <label for="">Kontak Lain</label>
-                            <input type="number" name="kontak lain" placeholder="Kontak Lain Pelanggan">
+                            <label for="">Kode Pos</label>
+                            <input type="text" name="post_code" placeholder="Kode Pos">
                         </div>
                         <div class="form-box">
                             <label for="alamat">Alamat Lengkap</label>

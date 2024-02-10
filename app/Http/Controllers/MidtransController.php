@@ -18,6 +18,7 @@ class MidtransController extends Controller
             $get_transaksi_reseller = PaymentReseller::where('code_invoice',$request->order_id)->first();
             if ($get_transaksi_reseller == null) {
                 $get_transaksi = Transaction::where('code_inv',$request->order_id)->first();
+                $TransaksiJubelio = $get_transaksi->id;
                 Transaction::where('code_inv',$request->order_id)->update([
                    'status'=>"paid"
                 ]);
@@ -29,6 +30,16 @@ class MidtransController extends Controller
                         'stok'=>$stok
                     ]);
                 }
+                $jubelio = $http->post('https://api.jubelio.com/sales/orders/set-as-paid',[
+                    'json'=> [
+                        "ids"=> [$TransaksiJubelio]
+                    ],
+                    'headers' => [
+                        'Authorization' => 'Bearer ' . token(),
+                        'Accept'        => 'application/json',
+                    ],
+                ]);
+                $jube = json_decode((string)$jubelio->getBody(), true);
             }else{
                 PaymentReseller::where('code_invoice',$request->order_id)->update([
                     'status'=>"paid"
@@ -38,6 +49,16 @@ class MidtransController extends Controller
                     Transaction::where('id',$transactions['id'])->update([
                         'status'=>'paid',
                     ]);
+                    $jubelio = $http->post('https://api.jubelio.com/sales/orders/set-as-paid',[
+                        'json'=> [
+                            "ids"=> [$transactions['id']]
+                        ],
+                        'headers' => [
+                            'Authorization' => 'Bearer ' . token(),
+                            'Accept'        => 'application/json',
+                        ],
+                    ]);
+                    $jube = json_decode((string)$jubelio->getBody(), true);
                     Comission::where('transaction_id',$transactions['id'])->update([
                         'status'=>'success'
                     ]);
@@ -66,6 +87,12 @@ class MidtransController extends Controller
             PaymentReseller::where('code_invoice',$request->order_id)->update([
                 'status'=>'pending',
             ]);
+            $transactions = Transaction::where('payment_reseller',$get_transaksi_reseller->id)->get();
+                 foreach ($transactions as $transactions) {
+                    Transaction::where('id',$transactions['id'])->update([
+                        'status'=>'pending',
+                    ]);
+                }
         }
 
         }
@@ -81,6 +108,12 @@ class MidtransController extends Controller
             PaymentReseller::where('code_invoice',$request->order_id)->update([
                 'status'=>'expired'
             ]);
+            $transactions = Transaction::where('payment_reseller',$get_transaksi_reseller->id)->get();
+            foreach ($transactions as $transactions) {
+                Transaction::where('id',$transactions['id'])->update([
+                    'status'=>'expired',
+                ]);
+            }
         }
 
         }

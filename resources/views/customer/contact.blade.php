@@ -28,24 +28,30 @@
             <button>Kirim Pesan</button>
         </div>
         <div class="social-media-contact">
+            <a href="{{ ig() }}">
             <div class="box-social-media-contact">
                 <div class="box-icon-social-media-contact">
                     <img src="images/instagram.png" alt="">
                 </div>
                 <p>@hooflakidswear</p>
             </div>
+        </a>
+            <a href="{{ tiktok() }}">
             <div class="box-social-media-contact">
                 <div class="box-icon-social-media-contact">
                     <img src="images/tiktok.png" alt="">
                 </div>
                 <p>hooflaofficial</p>
             </div>
+        </a>
+            <a href="{{ shopee() }}">
             <div class="box-social-media-contact">
                 <div class="box-icon-social-media-contact">
                     <img src="images/shopee.png" alt="">
                 </div>
                 <p>hooflakidsclothing</p>
             </div>
+        </a>
             <div class="box-social-media-contact">
                 <div class="box-icon-social-media-contact" onclick="togglePopup('whatsappPopup')">
                     <img src="images/whatsapp.png" alt="">
@@ -66,19 +72,19 @@
                     </div>
                     <div class="content-popup">
                         <div class="layout-whatsapp">
-                            <a href="">
+                            <a href="https://wa.me/{{ waSatu() }}">
                                 <div class="box-popup-whatsapp">
                                     <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
                                     <span>Customer Service 1</span>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://wa.me/{{ waDua() }}">
                                 <div class="box-popup-whatsapp">
                                     <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
                                     <span>Customer Service 2</span>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://wa.me/{{ waTiga() }}">
                                 <div class="box-popup-whatsapp">
                                     <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
                                     <span>Customer Service 2</span>

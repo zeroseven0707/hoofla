@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->integer('contact_id')->unique();
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email')->unique();
@@ -32,7 +33,8 @@ return new class extends Migration
             $table->text('address')->nullable();
             $table->integer('nomor_rekening')->nullable();
             $table->string('account_holders_name')->nullable();
-            $table->enum('level',['admin','reseller'])->default('reseller');
+            $table->enum('level',['admin','reseller','agen','sub agen','distributor'])->default('reseller');
+            $table->integer('code_category')->nullable();
             $table->enum('status',['active','non active'])->default('non active');
             $table->foreignId('grade_id')->default(1);
             $table->foreignId('bank_id')->nullable();

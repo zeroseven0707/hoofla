@@ -79,8 +79,8 @@
             <h3>Rp. {{ number_format($total) }} ,-</h3>
         </div>
         @auth
-        <a href="{{ url('/checkout') }}">
-            @else
+            <a href="{{ url('/checkout') }}">
+        @else
         <a href="{{ url('/informasi') }}">
         @endauth
             <button class="checkout-button__next">

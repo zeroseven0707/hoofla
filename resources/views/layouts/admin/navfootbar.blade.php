@@ -32,19 +32,24 @@
                 )
     </script>
     @endif
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
 <header class="header">
     <div class="top-menu">
         <div class="container top-menu-layout">
             <div class="top-menu-layout-box">
                 <!-- SETELAH USER LOGIN MAKA TAMPILKAN YANG DIBAWAH INI -->
-                <!-- <div class="menu-reseller">
+                @auth
+               <div class="menu-reseller">
                     <ul>
-                        <li><a href="#"><iconify-icon icon="material-symbols-light:book-outline"></iconify-icon> Pemesanan</a></li>
-                        <li><a href="#"><iconify-icon icon="ph:wallet-light"></iconify-icon> Saldo</a></li>
-                        <li><a href="#"><iconify-icon icon="ph:note-thin"></iconify-icon> Transaksi</a></li>
-                        <li><a href="#"><iconify-icon icon="ph:user-circle-thin"></iconify-icon> Pelanggan</a></li>
+                        <li><a href="/riwayat-pesanan"><iconify-icon icon="material-symbols-light:book-outline"></iconify-icon> Pemesanan</a></li>
+                        <li><a href="/poin"><iconify-icon icon="ph:wallet-light"></iconify-icon> Poin</a></li>
+                        {{-- <li><a href=""><iconify-icon icon="ph:note-thin"></iconify-icon> Transaksi</a></li> --}}
+                        <li><a href="/customer-pelanggan"><iconify-icon icon="ph:user-circle-thin"></iconify-icon> Pelanggan</a></li>
                     </ul>
-                </div> -->
+                </div>
+                @endauth
                 <!-- SETELAH USER LOGIN MAKA TAMPILKAN YANG DIATAS INI -->
             </div>
             <div class="top-menu-layout-box top-menu-layout-box-2">
@@ -53,7 +58,7 @@
                 <div class="login-user-layout">
                     <button class="user-btn-login" id="toggleButtonUser">
                         <iconify-icon icon="mingcute:user-4-fill"></iconify-icon>
-                        <p>{{ auth()->user()->first_name }}<span>(Reseller)</span></p>
+                        <p>{{ auth()->user()->first_name }}<span>({{ auth()->user()->level }})</span></p>
                     </button>
                     <div class="popup-user" id="userPopup">
                         <ul>
@@ -78,7 +83,7 @@
                             <button class="font-17">Masuk</button>
                         </a>
                         |
-                        <a href="/daftar">
+                        <a href="/register">
                             <button class="font-17">Daftar</button>
                         </a>
                 </div>
@@ -89,22 +94,22 @@
                 <!-- Ketika user sudah login maka div di atas ini di hilangkan -->
 
                 <div class="social-media">
-                    <a href="">
+                    <a href="{{ fb() }}">
                         <div class="social-media-box">
                             <iconify-icon icon="uil:facebook"></iconify-icon>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="{{ ig() }}">
                         <div class="social-media-box">
                             <iconify-icon icon="mdi:instagram"></iconify-icon>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="{{ youtube() }}">
                         <div class="social-media-box">
                         <iconify-icon icon="entypo-social:youtube"></iconify-icon>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="https://wa.me/{{ waSatu() }}">
                         <div class="social-media-box">
                             <iconify-icon icon="ri:whatsapp-fill"></iconify-icon>
                         </div>
@@ -140,7 +145,7 @@
                    </ul> --}}
                 </li>
                 <li class="menu-item">
-                    <a href="/gabung-reseller">Gabung Kemitraan</a>
+                    <a href="/gabung-kemitraan">Gabung Kemitraan</a>
                 </li>
                 <li class="menu-item">
                     <a href="/tentang-kami">Tentang Kami</a>
@@ -210,10 +215,12 @@
     <div class="popup hide-popup" id="searchPopup">
         <div class="main-popup">
             <div class="overlay-popup" onclick="togglePopup('searchPopup')"></div>
-            <div class="search-box">
-                <input type="text" placeholder="Cari disini...">
-                <iconify-icon icon="gala:search"></iconify-icon>
-            </div>
+            <form action="/search" method="get">
+                <div class="search-box">
+                    <input type="text" name="search" placeholder="Cari disini...">
+                    <iconify-icon icon="gala:search"></iconify-icon>
+                </div>
+            </form>
         </div>
     </div>
   </header>
@@ -232,26 +239,26 @@
       <div class="menu-footer-item">
         <h3>Informasi</h3>
         <ul>
-          <li><a href="contact.php">Kontak Kami</a></li>
-          <li><a href="faq.php">FAQ</a></li>
-          <li><a href="gabung-reseller.php">Cara Gabung Kemitraan</a></li>
+          <li><a href="/contact">Kontak Kami</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/gabung-kemitraan">Cara Gabung Kemitraan</a></li>
         </ul>
       </div>
       <div class="menu-footer-item">
         <h3>Kategori</h3>
         <ul>
-          <?php for ($i = 0; $i < 5; $i++) : ?>
-            <li><a href="">Aksesoris</a></li>
-          <?php endfor; ?>
+          @foreach (category() as $item)
+          <li><a href="{{ url('/category'.'/'.$item['id']) }}">{{ $item['name'] }}</a></li>
+          @endforeach
         </ul>
       </div>
       <div class="menu-footer-item">
         <h3>Media Sosial</h3>
         <ul>
-          <li><a href=""><iconify-icon icon="uil:facebook"></iconify-icon> Hooflakids</a></li>
-          <li><a href=""><iconify-icon icon="ri:instagram-line"></iconify-icon> @hooflakidswear</a></li>
-          <li><a href=""><iconify-icon icon="mdi:youtube"></iconify-icon> hooflakidswear</a></li>
-          <li><a href=""><iconify-icon icon="ic:baseline-tiktok"></iconify-icon> hooflaofficial</a></li>
+          <li><a href="{{ fb() }}"><iconify-icon icon="uil:facebook"></iconify-icon> Hooflakids</a></li>
+          <li><a href="{{ ig() }}"><iconify-icon icon="ri:instagram-line"></iconify-icon> @hooflakidswear</a></li>
+          <li><a href="{{ youtube() }}"><iconify-icon icon="mdi:youtube"></iconify-icon> hooflakidswear</a></li>
+          <li><a href="{{ tiktok() }}"><iconify-icon icon="ic:baseline-tiktok"></iconify-icon> hooflaofficial</a></li>
         </ul>
       </div>
     </div>

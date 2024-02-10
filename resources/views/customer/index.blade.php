@@ -12,7 +12,7 @@
                 <div class="banner-content">
                     <span>{{ $item['text_1'] }}</span>
                     <h1>{{ $item['text_2'] }}</h1>
-                    <p>{{ $item['text_3'] }}</p>
+                    <p>Rp. {{ number_format($item['text_3']) }} ,-</p>
                     <div class="banner-content-button">
                         <a href="#">
                             <button>Jelajahi</button>
@@ -75,8 +75,12 @@
                                 @auth
                                 @if (auth()->user()->level == 'reseller')
                                 <span>Rp. {{ number_format($item['reseller_sell_price']) }} ,-</span>
-                                @else
-                                <span>Rp. {{ number_format($item['sell_price']) }} ,-</span>
+                                @elseif (auth()->user()->level == 'distributor')
+                                <span>Rp. {{ number_format($item['distributor_sell_price']) }} ,-</span>
+                                @elseif (auth()->user()->level == 'agen')
+                                <span>Rp. {{ number_format($item['agen_sell_price']) }} ,-</span>
+                                @elseif(auth()->user()->level == 'sub agen')
+                                <span>Rp. {{ number_format($item->sub_agen_sell_price) }} ,-</span>
                                 @endif
                                 @else
                                 <span>Rp. {{ number_format($item['sell_price']) }} ,-</span>

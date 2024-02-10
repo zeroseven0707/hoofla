@@ -94,12 +94,6 @@
                     <span>-</span>
                 </div>
             </div>
-            <div class="sidebar-informasi__total">
-                <div class="sidebar-informasi__total-box">
-                    <span>Kode Kupon</span>
-                    <input type="text" class="input-focus">
-                </div>
-            </div>
             {{-- <div class="sidebar-informasi__total">
                 <div class="sidebar-informasi__total-box">
                     <span>Kode Referal</span>

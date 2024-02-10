@@ -9,9 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Transaction extends Model
 {
-    protected $guarded = [
-        'id'
-    ];
+    protected $guarded = [];
     use HasFactory;
 
     /**

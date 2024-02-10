@@ -25,14 +25,18 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request): RedirectResponse
     {
-        $request->authenticate();
-
-        $request->session()->regenerate();
-
-        if (Auth::user()->level == 'admin') {
-            return redirect()->intended('/products');
-        }else{
-            return redirect()->intended('/')->with('success','Login Successfully');
+        try {
+            $request->authenticate();
+            $request->session()->regenerate();
+    
+            if (Auth::user()->level == 'admin') {
+                return redirect()->intended('/products');
+            } else {
+                return redirect()->intended('/')->with('success', 'Login Successfully');
+            }
+        } catch (\Exception $e) {
+            // Handle the exception and return back with an error message
+            return back()->with('error', 'An error occurred during login: ' . $e->getMessage());
         }
     }
 

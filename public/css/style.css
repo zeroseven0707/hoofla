@@ -5,8 +5,8 @@
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
     outline: none;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
-            -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+            -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
 }
 :root{
     --font-color: #363B5B;
@@ -150,9 +150,9 @@ a:hover{
     .close-nav-menu{
         display: block;
     }
-    
+
      .menu > .menu-item-has-children:hover > a .plus:after{
-        transform: translate(-50%,-50%) rotate(0deg);		
+        transform: translate(-50%,-50%) rotate(0deg);
      }
      .header .menu-overlay.active{
         visibility: visible;
@@ -182,7 +182,7 @@ a:hover{
 		display: block;
 		margin:0;
         width: 100%;
-        
+
 	}
     .logo-mobile{
         padding: 18px 14px;
@@ -210,7 +210,7 @@ a:hover{
     }
     .header .menu > .menu-item-has-children{
         width: 100%;
-        
+
     }
 	.header .menu > .menu-item > a{
 		color: var(--font-color) !important;
@@ -230,7 +230,7 @@ a:hover{
         padding: 18px 16px;
         border-bottom: 1px solid var(--font-color);
 	}
-	.header .menu > .menu-item > a .plus:before, 
+	.header .menu > .menu-item > a .plus:before,
 	.header .menu > .menu-item > a .plus:after{
 		background-color: #ffffff;
 	}
@@ -293,7 +293,7 @@ a:hover{
     /* TOP MENU */
     .top-menu-layout-box{
         display: block;
-        
+
     }
     .menu-reseller{
         width: 100%;
@@ -345,7 +345,7 @@ a:hover{
     .top-menu-layout ul li:first-child a{
         padding-left: 0;
     }
-    
+
     .social-media{
         display: none;
     }
@@ -374,9 +374,9 @@ a:hover{
     .close-nav-menu{
         display: block;
     }
-    
+
      .menu > .menu-item-has-children:hover > a .plus:after{
-        transform: translate(-50%,-50%) rotate(0deg);		
+        transform: translate(-50%,-50%) rotate(0deg);
      }
      .menu-overlay{
         position: fixed;
@@ -428,7 +428,7 @@ a:hover{
         width: 72%;
     }
     .header .menu > .menu-item-has-children{
-        width: 100%;   
+        width: 100%;
     }
     .close-menu{
         width: 100%;
@@ -463,7 +463,7 @@ a:hover{
         padding: 11px 18px;
         border-bottom: 1px solid var(--font-color);
 	}
-	.header .menu > .menu-item > a .plus:before, 
+	.header .menu > .menu-item > a .plus:before,
 	.header .menu > .menu-item > a .plus:after{
 		background-color: #ffffff;
 	}
@@ -645,6 +645,7 @@ a:hover{
         border-bottom: 4px solid white;
         border-radius: 0;
         margin-top: 5px;
+        color: rgba(0, 0, 0, 0.082);
     }
     .myBanner{
         /* padding: 20px 0 !important;
@@ -1155,7 +1156,7 @@ a:hover{
         padding: 30px 0;
         padding-top: 5px;
     }
-    
+
     .image-product-page-main {
         position: relative;
         width: 100%;
@@ -1163,7 +1164,7 @@ a:hover{
         position: relative;
         box-shadow: 0px 0px 17px 0px #2d314f1f;
     }
-    
+
     .image-product-page-main img {
         width: 100%;
         height: 100%;
@@ -1174,7 +1175,7 @@ a:hover{
         object-fit: cover;
         transition: .3s all;
     }
-    
+
     .show-image{
         opacity: 1;
     }
@@ -1343,7 +1344,7 @@ a:hover{
         gap:17px;
         align-items:center;
         border-radius: 0 8px 8px 8px;
-       
+
     }
     .qty-layout button{
         font-size:15px;
@@ -1870,7 +1871,7 @@ a:hover{
         margin-bottom: 12px;
         gap: 4px;
     }
-    
+
     .form-box label{
         font-size: 15px;
         color: var(--font-color);
@@ -1945,7 +1946,7 @@ a:hover{
         margin-bottom: 25px;
         margin-top: 20px;
     }
-    
+
     /* Hide the browser's default checkbox */
     .remind input {
         position: absolute;
@@ -1954,7 +1955,7 @@ a:hover{
         height: 0;
         width: 0;
     }
-    
+
     /* Create a custom checkbox */
     .checkmark {
         position: absolute;
@@ -1967,24 +1968,24 @@ a:hover{
         border-radius: 4px;
         margin-top: 1px;
     }
-    
+
     /* When the checkbox is checked, add a blue background */
     .remind input:checked ~ .checkmark {
         background-color: white;
     }
-    
+
     /* Create the checkmark/indicator (hidden when not checked) */
     .checkmark:after {
         content: "";
         position: absolute;
         display: none;
     }
-    
+
     /* Show the checkmark when checked */
     .remind input:checked ~ .checkmark:after {
         display: block;
     }
-    
+
     /* Style the checkmark/indicator */
     .remind .checkmark:after {
         left: 50%;
@@ -2277,7 +2278,7 @@ a:hover{
         align-items: center;
         justify-content: center;
         padding: 60px;
-        
+
     }
     .main-popup::-webkit-scrollbar{
         display: none;
@@ -2575,13 +2576,13 @@ a:hover{
         border: 2px solid transparent;
         color: var(--font-color);
       }
-      
+
       .faq-active{
         background-color: #ffffff;
         padding: 18px 20px;
         border: 2px solid var(--yellow);
       }
-      
+
       .faq-accordion:after {
         content: url('https://api.iconify.design/octicon/chevron-down-16.svg?color=%23363b5b&width=18&height=18');
         margin-bottom: -9px;
@@ -2592,13 +2593,13 @@ a:hover{
         transition: .3s all;
         font-size: 18px;
       }
-      
+
       .faq-active:after {
         content: url('https://api.iconify.design/octicon/chevron-down-16.svg?color=%23363b5b&width=18&height=18');
         margin-bottom: 2px;
         transform: rotate(180deg);
       }
-      
+
       .faq-panel {
         padding: 0 18px;
         background-color: transparent;
@@ -2840,6 +2841,446 @@ a:hover{
         display: block;
     }
     /* PEMESANAN END */
+
+    /* RIWAYAT PESANAN */
+    .tab-riwayat{
+        background-color: #2D314F;
+        border-radius: 20px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 6px;
+        margin: 30px auto;
+        margin-bottom: 35px;
+        width: 96%;
+        flex-wrap: wrap;
+    }
+    .tablinksRiwayat{
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        padding: 8px 12px;
+        font-size: 13px;
+        cursor: pointer;
+        color: var(--font-color);
+        font-weight: 600;
+        background-color: white;
+    }
+    .tablinksRiwayat.active-riwayat{
+        background-color: var(--yellow);
+    }
+    .tab-riwayat-content{
+        padding-bottom: 50px;
+    }
+    .dynamic-button {
+		background-color: white;
+		color: var(--font-color);
+		padding: 9px 12px;
+		border: none;
+		cursor: pointer;
+        border-radius: 100px;
+        font-weight: 500;
+        font-size: 12px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+	  }
+
+	  .popup-date {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+		z-index: 1;
+        overflow: hidden;
+        width:max-content;
+        margin-top: 5px;
+	  }
+
+	  .popup-date ul {
+		list-style: none;
+		padding: 0;
+	  }
+
+	  .popup-date li {
+		cursor: pointer;
+		padding: 13px 25px;
+		transition: background-color 0.3s;
+        font-size: 18px;
+        border-bottom: 1px solid #2D314F70;
+	  }
+
+	  .popup-date li:hover {
+		background-color: #25D366;
+	  }
+
+	  /* Opsi untuk tanggal yang dipilih */
+	  .popup-date li.selected {
+		font-weight: bold;
+		background-color: #25D366;
+		color: #fff;
+	  }
+
+	  /* Menerapkan warna pada opsi yang di-hover */
+	  .popup-date li:not(.selected):hover {
+		background-color: #25D366;
+		color: #fff;
+	  }
+
+      .pesanan-layout-top{
+        display: flex;
+        width: 96%;
+        margin: auto;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .pesanan-layout-top__box{
+        display: flex;
+      }
+      .pesanan-layout-top__box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+      }
+      .sort-box{
+        display: flex;
+      }
+      .search-box-page{
+        background-color: white;
+        padding: 9px 15px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+
+      }
+      .search-box-page input{
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 12px;
+        color: var(--font-color);
+        width: 95px;
+        font-weight: 500;
+      }
+      .search-box-page input::placeholder{
+        color: #2D314F70;
+      }
+      .search-box-page iconify-icon{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+
+      .sort-box{
+        display: flex;
+        gap: 10px;
+      }
+      .sort-category label{
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--font-color);
+      }
+      .order-detail{
+        font-size: 12px;
+        color: var(--font-color);
+        font-weight: 500;
+      }
+      .bg-red{
+        background: #FF3B3C2B !important;
+        color: #FF3B3C !important;
+      }
+      .bg-green{
+        background: #25D3663D !important;
+        color: #25D366 !important;
+      }
+      /* END RIWAYAT PESANAN */
+
+      /* PELANGGAN PAGE */
+      .pesanan-layout-top-pelanggan{
+        display: flex;
+        flex-direction: row;
+      }
+      .search-box-page-pelanggan input{
+        width: 88px !important;
+      }
+      .btn-blue-download{
+        border: none;
+        outline: none;
+        padding: 9px 14px;
+        border-radius: 100px;
+        background-color: #0163F8;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: white;
+        gap:10px;
+        cursor: pointer;
+      }
+      .btn-blue-download iconify-icon{
+        font-size: 17px;
+      }
+      .table-layout{
+        margin-top: 30px;
+        margin-bottom: 80px;
+        width: 100%;
+        overflow-x: scroll;
+      }
+      .table-layout table{
+        width: max-content;
+        margin: 0 20px;
+      }
+      .table-layout table, tr, th ,td{
+        border: 2px solid #2D314F;
+        border-collapse: collapse;
+        padding: 12px;
+        text-align: center;
+        font-size: 15px;
+      }
+      .table-layout tr th:nth-child(1){
+        width: max-content;
+        width: 2%;
+      }
+      .table-layout tr th:nth-child(2){
+        width: 10%;
+      }
+      .table-layout tr th:nth-child(3){
+        width: 10%;
+      }
+      .table-layout tr th:nth-child(4){
+        width: 12%;
+      }
+      .table-layout tr th:nth-child(5){
+        width: 27%;
+      }
+      .table-layout tr th:nth-child(6){
+        width: 10%;
+      }
+      .table-layout tr th{
+        color: #2D314F;
+        font-size: 16px;
+        background-color: #2D314F1A;
+      }
+      .table-layout tr td{
+        color: #2D314F;
+        background-color: #fff;
+      }
+      .btn-edit{
+        background-color: #FFCC00;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin: auto;
+        color: white;
+        border-radius: 100px;
+        padding: 8px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        color: var(--font-color);
+      }
+      /* PELANGGAN PAGE END */
+
+      /* SALDO */
+      .container-small{
+        width: 90%;
+      }
+      .table-layout-five-col tr th:nth-child(1){
+        width: 5%;
+      }
+      .table-layout-five-col tr th:nth-child(2){
+        width: 23%;
+      }
+      .table-layout-five-col tr th:nth-child(3){
+        width: 31%;
+      }
+      .table-layout-five-col tr th:nth-child(4){
+        width: 22%;
+      }
+      .table-layout-five-col tr th:nth-child(5){
+        width: 15%;
+      }
+
+      .saldo-detail{
+        padding: 32px;
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 30px;
+        background-color: white;
+        grid-gap: 30px;
+        box-shadow: 0px 0px 22px 0px rgba(45, 49, 79, 0.14);
+        margin-bottom:56px;
+      }
+      .saldo-form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+      .saldo-form label{
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .saldo-form input{
+        width: 100%;
+        border-radius: 100px;
+        font-size: 18px;
+        padding: 10px 18px;
+        outline: none;
+        font-weight: 600;
+      }
+      .input-black{
+        background: #2D314F0A;
+        border: 2px solid var(--font-color);
+        color: var(--font-color);
+      }
+      .input-green{
+        background: #01A5600A;
+        border: 2px solid #25D366;
+        color: #25D366;
+      }
+      .input-yellow{
+        background: #FFC1070A;
+        border: 2px solid #FFC107;
+        color: #FFC107;
+      }
+      .tab-riwayat-pelanggan{
+        margin: auto;
+        margin-bottom: 50px;
+        width: 100%;
+      }
+      .form-topup-saldo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      .form-topup-saldo label{
+        font-size: 20px;
+        color: var(--font-color);
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .form-topup-saldo input{
+        font-size: 21px;
+        text-align: center;
+        outline: none;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 100px;
+        margin: 10px 0;
+        margin-bottom: 3px;
+        color: var(--font-color);
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+      .form-topup-saldo input::placeholder{
+        color: #2D314F70;
+      }
+      /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+      .form-topup-saldo span{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+      .btn-topup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37px;
+        gap:4px;
+      }
+      .btn-topup button{
+        border: none;
+        outline: none;
+        font-size: 18px;
+        border-radius: 100px;
+        padding: 10px 25px;
+        background: #25D366;
+        color: white;
+        cursor: pointer;
+      }
+      .btn-topup span{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+
+      .form-withdraw-layout{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        grid-gap: 20px;
+        margin-top: 30px;
+      }
+      .select-style-saldo{
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px 21px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+      .select-style-saldo select{
+        width: 100%;
+        appearance: none !important;
+        font-size: 18px;
+        border: none;
+        color: var(--font-color);
+        outline: none;
+        background-color: transparent;
+      }
+      .form-withdraw{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap:8px;
+      }
+      .form-withdraw label{
+        font-size: 18px;
+        color: var(--font-color);
+      }
+      .form-withdraw input{
+        width: 100%;
+        color: var(--font-color);
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px 21px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+
+      .withdraw-content{
+        color: var(--font-color);
+        text-align: center;
+        margin-bottom: 17px;
+      }
+      .withdraw-content h5{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      .withdraw-content h2{
+        font-size: 30px;
+      }
+      /* SALDO END */
 }
 
 
@@ -2932,9 +3373,9 @@ a:hover{
     .close-nav-menu{
         display: block;
     }
-    
+
      .menu > .menu-item-has-children:hover > a .plus:after{
-        transform: translate(-50%,-50%) rotate(0deg);		
+        transform: translate(-50%,-50%) rotate(0deg);
      }
      .header .menu-overlay.active{
         visibility: visible;
@@ -2974,7 +3415,7 @@ a:hover{
         width: 72%;
     } */
     .header .menu > .menu-item-has-children{
-        width: 100%;   
+        width: 100%;
     }
     .close-menu{
         width: 100%;
@@ -3025,7 +3466,7 @@ a:hover{
         padding: 15px 18px;
         border-bottom: 1px solid var(--font-color);
 	}
-	.header .menu > .menu-item > a .plus:before, 
+	.header .menu > .menu-item > a .plus:before,
 	.header .menu > .menu-item > a .plus:after{
 		background-color: #ffffff;
 	}
@@ -3710,7 +4151,7 @@ a:hover{
         padding: 30px 0;
         padding-top: 5px;
     }
-    
+
     .image-product-page-main {
         position: relative;
         width: 100%;
@@ -3718,7 +4159,7 @@ a:hover{
         position: relative;
         box-shadow: 0px 0px 17px 0px #2d314f1f;
     }
-    
+
     .image-product-page-main img {
         width: 100%;
         height: 100%;
@@ -3729,7 +4170,7 @@ a:hover{
         object-fit: cover;
         transition: .3s all;
     }
-    
+
     .show-image{
         opacity: 1;
     }
@@ -3898,7 +4339,7 @@ a:hover{
         gap:17px;
         align-items:center;
         border-radius: 0 8px 8px 8px;
-       
+
     }
     .qty-layout button{
         font-size:15px;
@@ -4427,7 +4868,7 @@ a:hover{
     .form-box-konfir{
         gap: 5px;
     }
-    
+
     .form-box label{
         font-size: 18px;
         color: var(--font-color);
@@ -4502,7 +4943,7 @@ a:hover{
         margin-bottom: 35px;
         margin-top: 25px;
     }
-    
+
     /* Hide the browser's default checkbox */
     .remind input {
         position: absolute;
@@ -4511,7 +4952,7 @@ a:hover{
         height: 0;
         width: 0;
     }
-    
+
     /* Create a custom checkbox */
     .checkmark {
         position: absolute;
@@ -4524,24 +4965,24 @@ a:hover{
         border-radius: 4px;
         margin-top: 1px;
     }
-    
+
     /* When the checkbox is checked, add a blue background */
     .remind input:checked ~ .checkmark {
         background-color: white;
     }
-    
+
     /* Create the checkmark/indicator (hidden when not checked) */
     .checkmark:after {
         content: "";
         position: absolute;
         display: none;
     }
-    
+
     /* Show the checkmark when checked */
     .remind input:checked ~ .checkmark:after {
         display: block;
     }
-    
+
     /* Style the checkmark/indicator */
     .remind .checkmark:after {
         left: 50%;
@@ -4837,7 +5278,7 @@ a:hover{
         align-items: center;
         justify-content: center;
         padding: 60px;
-        
+
     }
     .main-popup::-webkit-scrollbar{
         display: none;
@@ -5135,13 +5576,13 @@ a:hover{
         border: 2px solid transparent;
         color: var(--font-color);
       }
-      
+
       .faq-active{
         background-color: #ffffff;
         padding: 18px 20px;
         border: 2px solid var(--yellow);
       }
-      
+
       .faq-accordion:after {
         content: url('https://api.iconify.design/octicon/chevron-down-16.svg?color=%23363b5b&width=18&height=18');
         margin-bottom: -9px;
@@ -5152,13 +5593,13 @@ a:hover{
         transition: .3s all;
         font-size: 18px;
       }
-      
+
       .faq-active:after {
         content: url('https://api.iconify.design/octicon/chevron-down-16.svg?color=%23363b5b&width=18&height=18');
         margin-bottom: 2px;
         transform: rotate(180deg);
       }
-      
+
       .faq-panel {
         padding: 0 18px;
         background-color: transparent;
@@ -5284,13 +5725,14 @@ a:hover{
         border-radius: 0;
     }
     .cart-product-box-pesanan-second{
-        display: grid;
+        display: flex !important;
+        flex-direction: column !important;
         grid-template-columns: 100%;
-        align-items: center;
+        align-items: flex-start !important;
         padding: 16px 0;
         background: white;
         transition: .3s all;
-        padding-left: 7px;
+        padding-left: 17px !important;
         box-shadow:0;
         border-radius: 0;
         border-top: 1px solid var(--font-color);
@@ -5301,7 +5743,7 @@ a:hover{
     }
     .cart-product-box-pesanan-third{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr) !important;
         grid-gap: 20px;
         border-top: none;
         border-bottom: 1px solid var(--font-color);
@@ -5400,6 +5842,575 @@ a:hover{
         display: block;
     }
     /* PEMESANAN END */
+
+    /* PESANAN START */
+    .pesanan-container{
+        background-color: white;
+        width: 95%;
+        padding: 25px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 1px rgba(45, 49, 79, 0.075);
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .cart-product-box-pesanan{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        padding: 0;
+        padding-bottom: 25px;
+        background: white;
+        transition: .3s all;
+        box-shadow:0;
+        border-radius: 0;
+    }
+    .cart-product-box-pesanan-second{
+        display: grid;
+        grid-template-columns: 34% 22% 22% 22%;
+        align-items: center;
+        padding: 16px 0;
+        background: white;
+        transition: .3s all;
+        box-shadow:0;
+        border-radius: 0;
+        border-top: 1px solid var(--font-color);
+        border-bottom: 1px solid var(--font-color);
+    }
+    .cart-product-box-pesanan-second .cart-product-image{
+        height: 0;
+    }
+    .cart-product-box-pesanan-third{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        border-top: none;
+        border-bottom: 1px solid var(--font-color);
+        padding:25px 0;
+    }
+    .cart-product-box-pesanan-third .form-box{
+        margin-bottom: 0;
+    }
+    .cart-product-box-pesanan-third .form-box input{
+        width: 100% !important;
+    }
+
+    .cart-product-box-pesanan-four{
+        display: flex;
+        align-items: center ;
+        padding-top: 0;
+        padding: 17px 0;
+        justify-content: space-between;
+    }
+    .send-to{
+        display: flex;
+        justify-content: flex-end;
+        gap: 7px;
+        align-items: center;
+    }
+    .send-to span{
+        font-size: 18px;
+        color: var(--font-color);
+    }
+    .send-to iconify-icon{
+        font-size: 20px;
+        color: var(--font-color);
+    }
+
+    .checkout-button-layout .remind{
+        margin-bottom: 7px;
+    }
+    .button-checkout-pesanan{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .checkout-button_shop{
+        background:#25D366;
+        color: white;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        padding: 17px 22px;
+        cursor: pointer;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+    .product-layout-price-pesanan{
+        display: block;
+    }
+    .product-layout-price-pesanan span{
+        font-size: 19px;
+    }
+    .cart-product-box-pesanan-second .cart-product-image{
+        display: none;
+    }
+    .expedition-name h3{
+        font-size: 21px;
+        width: 100%;
+    }
+    .cart-product-detail-pesanan{
+        display: block;
+    }
+    .cart-product-box-pesanan-four .remind{
+        margin: 0;
+    }
+    .total-produk-pesanan{
+        margin-left: 0;
+    }
+    .checkout-button-pesanan{
+        position: relative;
+    }
+    .heading-pesanan-mobile{
+        display: none;
+    }
+    /* PEMESANAN END */
+
+    /* RIWAYAT PESANAN */
+    .tab-riwayat{
+        background-color: #2D314F;
+        border-radius: 20px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 6px;
+        margin: 30px auto;
+        margin-bottom: 35px;
+        width: 96%;
+        flex-wrap: wrap;
+    }
+    .tablinksRiwayat{
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        padding: 8px 12px;
+        font-size: 13px;
+        cursor: pointer;
+        color: var(--font-color);
+        font-weight: 600;
+        background-color: white;
+    }
+    .tablinksRiwayat.active-riwayat{
+        background-color: var(--yellow);
+    }
+    .tab-riwayat-content{
+        padding-bottom: 50px;
+    }
+    .dynamic-button {
+		background-color: white;
+		color: var(--font-color);
+		padding: 9px 15px;
+		border: none;
+		cursor: pointer;
+        border-radius: 100px;
+        font-weight: 500;
+        font-size: 14px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+	  }
+
+	  .popup-date {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+		z-index: 1;
+        overflow: hidden;
+        width:max-content;
+        margin-top: 5px;
+	  }
+
+	  .popup-date ul {
+		list-style: none;
+		padding: 0;
+	  }
+
+	  .popup-date li {
+		cursor: pointer;
+		padding: 13px 25px;
+		transition: background-color 0.3s;
+        font-size: 18px;
+        border-bottom: 1px solid #2D314F70;
+	  }
+
+	  .popup-date li:hover {
+		background-color: #25D366;
+	  }
+
+	  /* Opsi untuk tanggal yang dipilih */
+	  .popup-date li.selected {
+		font-weight: bold;
+		background-color: #25D366;
+		color: #fff;
+	  }
+
+	  /* Menerapkan warna pada opsi yang di-hover */
+	  .popup-date li:not(.selected):hover {
+		background-color: #25D366;
+		color: #fff;
+	  }
+
+      .pesanan-layout-top{
+        display: flex;
+        width: 96%;
+        margin: auto;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .pesanan-layout-top__box{
+        display: flex;
+      }
+      .pesanan-layout-top__box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+      }
+      .sort-box{
+        display: flex;
+      }
+      .search-box-page{
+        background-color: white;
+        padding: 9px 15px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+
+      }
+      .search-box-page input{
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 14px;
+        color: var(--font-color);
+        width: 115px;
+        font-weight: 500;
+      }
+      .search-box-page input::placeholder{
+        color: #2D314F70;
+      }
+      .search-box-page iconify-icon{
+        font-size: 19px;
+        color: var(--font-color);
+      }
+
+      .sort-box{
+        display: flex;
+        gap: 10px;
+      }
+      .sort-category label{
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--font-color);
+      }
+      .order-detail{
+        font-size: 17px;
+        color: var(--font-color);
+        font-weight: 500;
+      }
+      .bg-red{
+        background: #FF3B3C2B !important;
+        color: #FF3B3C !important;
+      }
+      .bg-green{
+        background: #25D3663D !important;
+        color: #25D366 !important;
+      }
+      /* END RIWAYAT PESANAN */
+
+      /* PELANGGAN PAGE */
+      .pesanan-layout-top-pelanggan{
+        display: flex;
+        flex-direction: row;
+      }
+      .search-box-page-pelanggan input{
+        width: 110px !important;
+      }
+      .btn-blue-download{
+        border: none;
+        outline: none;
+        padding: 9px 18px;
+        border-radius: 100px;
+        background-color: #0163F8;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: white;
+        gap:10px;
+        cursor: pointer;
+      }
+      .btn-blue-download iconify-icon{
+        font-size: 17px;
+      }
+      .table-layout{
+        margin-top: 30px;
+        margin-bottom: 80px;
+        width: 100%;
+        overflow-x: scroll;
+      }
+      .table-layout table{
+        width: max-content;
+        margin: 0 20px;
+      }
+      .table-layout table, tr, th ,td{
+        border: 2px solid #2D314F;
+        border-collapse: collapse;
+        padding: 12px;
+        text-align: center;
+        font-size: 15px;
+      }
+      .table-layout tr th:nth-child(1){
+        width: max-content;
+        width: 4%;
+      }
+      .table-layout tr th:nth-child(2){
+        width: 12%;
+      }
+      .table-layout tr th:nth-child(3){
+        width: 13%;
+      }
+      .table-layout tr th:nth-child(4){
+        width: 15%;
+      }
+      .table-layout tr th:nth-child(5){
+        width: 22%;
+      }
+      .table-layout tr th:nth-child(6){
+        width: 10%;
+      }
+      .table-layout tr th{
+        color: #2D314F;
+        font-size: 16px;
+        background-color: #2D314F1A;
+      }
+      .table-layout tr td{
+        color: #2D314F;
+        background-color: #fff;
+      }
+      .btn-edit{
+        background-color: #FFCC00;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin: auto;
+        color: white;
+        border-radius: 100px;
+        padding: 8px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        color: var(--font-color);
+      }
+      /* PELANGGAN PAGE END */
+
+      /* SALDO */
+      .container-small{
+        width: 90%;
+      }
+      .table-layout-five-col tr th:nth-child(1){
+        width: 5%;
+      }
+      .table-layout-five-col tr th:nth-child(2){
+        width: 23%;
+      }
+      .table-layout-five-col tr th:nth-child(3){
+        width: 31%;
+      }
+      .table-layout-five-col tr th:nth-child(4){
+        width: 22%;
+      }
+      .table-layout-five-col tr th:nth-child(5){
+        width: 15%;
+      }
+
+      .saldo-detail{
+        padding: 32px;
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 30px;
+        background-color: white;
+        grid-gap: 30px;
+        box-shadow: 0px 0px 22px 0px rgba(45, 49, 79, 0.14);
+        margin-bottom:56px;
+      }
+      .saldo-form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+      .saldo-form label{
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .saldo-form input{
+        width: 100%;
+        border-radius: 100px;
+        font-size: 18px;
+        padding: 10px 18px;
+        outline: none;
+        font-weight: 600;
+      }
+      .input-black{
+        background: #2D314F0A;
+        border: 2px solid var(--font-color);
+        color: var(--font-color);
+      }
+      .input-green{
+        background: #01A5600A;
+        border: 2px solid #25D366;
+        color: #25D366;
+      }
+      .input-yellow{
+        background: #FFC1070A;
+        border: 2px solid #FFC107;
+        color: #FFC107;
+      }
+      .tab-riwayat-pelanggan{
+        margin: auto;
+        margin-bottom: 50px;
+        width: 100%;
+      }
+      .form-topup-saldo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      .form-topup-saldo label{
+        font-size: 20px;
+        color: var(--font-color);
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .form-topup-saldo input{
+        font-size: 21px;
+        text-align: center;
+        outline: none;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 100px;
+        margin: 10px 0;
+        margin-bottom: 3px;
+        color: var(--font-color);
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+      .form-topup-saldo input::placeholder{
+        color: #2D314F70;
+      }
+      /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+      .form-topup-saldo span{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+      .btn-topup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37px;
+        gap:4px;
+      }
+      .btn-topup button{
+        border: none;
+        outline: none;
+        font-size: 18px;
+        border-radius: 100px;
+        padding: 10px 25px;
+        background: #25D366;
+        color: white;
+        cursor: pointer;
+      }
+      .btn-topup span{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+
+      .form-withdraw-layout{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        grid-gap: 20px;
+        margin-top: 30px;
+      }
+      .select-style-saldo{
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px 21px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+      .select-style-saldo select{
+        width: 100%;
+        appearance: none !important;
+        font-size: 18px;
+        border: none;
+        color: var(--font-color);
+        outline: none;
+        background-color: transparent;
+      }
+      .form-withdraw{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap:8px;
+      }
+      .form-withdraw label{
+        font-size: 18px;
+        color: var(--font-color);
+      }
+      .form-withdraw input{
+        width: 100%;
+        color: var(--font-color);
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px 21px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+
+      .withdraw-content{
+        color: var(--font-color);
+        text-align: center;
+        margin-bottom: 17px;
+      }
+      .withdraw-content h5{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      .withdraw-content h2{
+        font-size: 30px;
+      }
+      /* SALDO END */
 }
 @media only screen and (min-width:768px) and (max-width:1023px) {
     /* CONTAINER START */
@@ -5489,9 +6500,9 @@ a:hover{
     .close-nav-menu{
         display: block;
     }
-    
+
      .menu > .menu-item-has-children:hover > a .plus:after{
-        transform: translate(-50%,-50%) rotate(0deg);		
+        transform: translate(-50%,-50%) rotate(0deg);
      }
      .menu-overlay{
         position: fixed;
@@ -5536,7 +6547,7 @@ a:hover{
         width: 100%;
 	}
     .header .menu > .menu-item-has-children{
-        width: 100%;   
+        width: 100%;
     }
     .close-menu{
         width: 100%;
@@ -5574,7 +6585,7 @@ a:hover{
     .menu-item-has-children a iconify-icon{
         font-size: 25px;
     }
-	.header .menu > .menu-item > a .plus:before, 
+	.header .menu > .menu-item > a .plus:before,
 	.header .menu > .menu-item > a .plus:after{
 		background-color: #ffffff;
 	}
@@ -6142,6 +7153,11 @@ a:hover{
         font-weight: 600;
         color: var(--font-color);
     }
+    .sort-category label{
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--font-color);
+      }
     .filter-category{
         display: flex;
         gap: 40px;
@@ -6196,8 +7212,9 @@ a:hover{
         border-radius: 100px;
         overflow: hidden;
         position: relative;
-        width: 98px;
+        width: max-content;
         color: var(--font-color);
+        padding-right: 15px;
     }
     .select-style-product select{
         border: none;
@@ -6228,7 +7245,7 @@ a:hover{
         padding: 30px 0;
         padding-top: 15px;
     }
-    
+
     .image-product-page-main {
         position: relative;
         width: 100%;
@@ -6236,7 +7253,7 @@ a:hover{
         position: relative;
         box-shadow: 0px 0px 17px 0px #2d314f1f;
     }
-    
+
     .image-product-page-main img {
         width: 100%;
         height: 100%;
@@ -6247,7 +7264,7 @@ a:hover{
         object-fit: cover;
         transition: .3s all;
     }
-    
+
     .show-image{
         opacity: 1;
     }
@@ -6917,7 +7934,7 @@ a:hover{
     .form-box-konfir{
         gap: 5px;
     }
-    
+
     .form-box label{
         font-size: 21px;
         color: var(--font-color);
@@ -6991,7 +8008,7 @@ a:hover{
         margin: 10px 0;
         margin-bottom: 35px;
     }
-    
+
     /* Hide the browser's default checkbox */
     .remind input {
         position: absolute;
@@ -7000,7 +8017,7 @@ a:hover{
         height: 0;
         width: 0;
     }
-    
+
     /* Create a custom checkbox */
     .checkmark {
         position: absolute;
@@ -7013,24 +8030,24 @@ a:hover{
         border-radius: 4px;
         margin-top: 1px;
     }
-    
+
     /* When the checkbox is checked, add a blue background */
     .remind input:checked ~ .checkmark {
         background-color: white;
     }
-    
+
     /* Create the checkmark/indicator (hidden when not checked) */
     .checkmark:after {
         content: "";
         position: absolute;
         display: none;
     }
-    
+
     /* Show the checkmark when checked */
     .remind input:checked ~ .checkmark:after {
         display: block;
     }
-    
+
     /* Style the checkmark/indicator */
     .remind .checkmark:after {
         left: 50%;
@@ -7317,7 +8334,7 @@ a:hover{
         align-items: center;
         justify-content: center;
         padding: 60px;
-        
+
     }
     .main-popup::-webkit-scrollbar{
         display: none;
@@ -7606,13 +8623,13 @@ a:hover{
         border: 2px solid transparent;
         color: var(--font-color);
       }
-      
+
       .faq-active{
         background-color: #ffffff;
         padding: 18px 20px;
         border: 2px solid var(--yellow);
       }
-      
+
       .faq-accordion:after {
         content: url('https://api.iconify.design/octicon/chevron-down-16.svg?color=%23363b5b&width=27&height=27');
         margin-bottom: -9px;
@@ -7623,13 +8640,13 @@ a:hover{
         transition: .3s all;
         font-size: 18px;
       }
-      
+
       .faq-active:after {
         content: url('https://api.iconify.design/octicon/chevron-down-16.svg?color=%23363b5b&width=27&height=27');
         margin-bottom: 2px;
         transform: rotate(180deg);
       }
-      
+
       .faq-panel {
         padding: 0 18px;
         background-color: transparent;
@@ -7863,6 +8880,440 @@ a:hover{
         display: none;
     }
     /* PEMESANAN END */
+
+    /* RIWAYAT PESANAN */
+    .tab-riwayat{
+        background-color: #2D314F;
+        border-radius: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        gap: 5px;
+        margin: 30px auto;
+        margin-bottom: 35px;
+        width: 96%;
+
+    }
+    .tablinksRiwayat{
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        padding: 8px 12px;
+        font-size: 13px;
+        cursor: pointer;
+        color: var(--font-color);
+        font-weight: 600;
+        background-color: white;
+    }
+    .tablinksRiwayat.active-riwayat{
+        background-color: var(--yellow);
+    }
+    .tab-riwayat-content{
+        padding-bottom: 50px;
+    }
+    .dynamic-button {
+		background-color: white;
+		color: var(--font-color);
+		padding: 9px 15px;
+		border: none;
+		cursor: pointer;
+        border-radius: 100px;
+        font-weight: 500;
+        font-size: 14px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+	  }
+
+	  .popup-date {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+		z-index: 1;
+        overflow: hidden;
+        width:max-content;
+        margin-top: 5px;
+	  }
+
+	  .popup-date ul {
+		list-style: none;
+		padding: 0;
+	  }
+
+	  .popup-date li {
+		cursor: pointer;
+		padding: 13px 25px;
+		transition: background-color 0.3s;
+        font-size: 18px;
+        border-bottom: 1px solid #2D314F70;
+	  }
+
+	  .popup-date li:hover {
+		background-color: #25D366;
+	  }
+
+	  /* Opsi untuk tanggal yang dipilih */
+	  .popup-date li.selected {
+		font-weight: bold;
+		background-color: #25D366;
+		color: #fff;
+	  }
+
+	  /* Menerapkan warna pada opsi yang di-hover */
+	  .popup-date li:not(.selected):hover {
+		background-color: #25D366;
+		color: #fff;
+	  }
+
+      .pesanan-layout-top{
+        display: flex;
+        width: 97%;
+        margin: auto;
+        justify-content: space-between;
+      }
+      .pesanan-layout-top__box{
+        display: flex;
+      }
+      .pesanan-layout-top__box{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+      .sort-box{
+        display: flex;
+      }
+      .search-box-page{
+        background-color: white;
+        padding: 9px 15px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+
+      }
+      .search-box-page input{
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 14px;
+        color: var(--font-color);
+        width: 115px;
+        font-weight: 500;
+      }
+      .search-box-page input::placeholder{
+        color: #2D314F70;
+      }
+      .search-box-page iconify-icon{
+        font-size: 19px;
+        color: var(--font-color);
+      }
+
+      .sort-box{
+        display: flex;
+        gap: 10px;
+      }
+      .sort-category label{
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--font-color);
+      }
+      .order-detail{
+        font-size: 17px;
+        color: var(--font-color);
+        font-weight: 500;
+      }
+      .bg-red{
+        background: #FF3B3C2B !important;
+        color: #FF3B3C !important;
+      }
+      .bg-green{
+        background: #25D3663D !important;
+        color: #25D366 !important;
+      }
+      /* END RIWAYAT PESANAN */
+
+      /* PELANGGAN PAGE */
+      .search-box-page-pelanggan input{
+        width: 200px !important;
+      }
+      .btn-blue-download{
+        border: none;
+        outline: none;
+        padding: 9px 25px;
+        border-radius: 100px;
+        background-color: #0163F8;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        color: white;
+        gap:10px;
+        cursor: pointer;
+      }
+      .btn-blue-download iconify-icon{
+        font-size: 18px;
+      }
+      .table-layout{
+        margin-top: 30px;
+        margin-bottom: 80px;
+        width: 100%;
+        overflow-x: scroll;
+      }
+      .table-layout table{
+        width: max-content;
+        margin: 0 20px;
+      }
+      .table-layout table, tr, th ,td{
+        border: 2px solid #2D314F;
+        border-collapse: collapse;
+        padding: 12px;
+        text-align: center;
+        font-size: 16px;
+      }
+      .table-layout tr th:nth-child(1){
+        width: max-content;
+        width: 5%;
+      }
+      .table-layout tr th:nth-child(2){
+        width: 14%;
+      }
+      .table-layout tr th:nth-child(3){
+        width: 15%;
+      }
+      .table-layout tr th:nth-child(4){
+        width: 15%;
+      }
+      .table-layout tr th:nth-child(5){
+        width: 25%;
+      }
+      .table-layout tr th:nth-child(6){
+        width: 10%;
+      }
+      .table-layout tr th{
+        color: #2D314F;
+        font-size: 17px;
+        background-color: #2D314F1A;
+      }
+      .table-layout tr td{
+        color: #2D314F;
+        background-color: #fff;
+      }
+      .btn-edit{
+        background-color: #FFCC00;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin: auto;
+        color: white;
+        border-radius: 100px;
+        padding: 8px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        color: var(--font-color);
+      }
+      /* PELANGGAN PAGE END */
+
+      /* SALDO */
+      .container-small{
+        width: 90%;
+      }
+      .table-layout-five-col tr th:nth-child(1){
+        width: 5%;
+      }
+      .table-layout-five-col tr th:nth-child(2){
+        width: 23%;
+      }
+      .table-layout-five-col tr th:nth-child(3){
+        width: 31%;
+      }
+      .table-layout-five-col tr th:nth-child(4){
+        width: 22%;
+      }
+      .table-layout-five-col tr th:nth-child(5){
+        width: 15%;
+      }
+
+      .saldo-detail{
+        padding: 32px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 30px;
+        background-color: white;
+        grid-gap: 30px;
+        box-shadow: 0px 0px 22px 0px rgba(45, 49, 79, 0.14);
+        margin-bottom:56px;
+      }
+      .saldo-form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+      .saldo-form label{
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .saldo-form input{
+        width: 100%;
+        border-radius: 100px;
+        font-size: 18px;
+        padding: 10px 18px;
+        outline: none;
+        font-weight: 600;
+      }
+      .input-black{
+        background: #2D314F0A;
+        border: 2px solid var(--font-color);
+        color: var(--font-color);
+      }
+      .input-green{
+        background: #01A5600A;
+        border: 2px solid #25D366;
+        color: #25D366;
+      }
+      .input-yellow{
+        background: #FFC1070A;
+        border: 2px solid #FFC107;
+        color: #FFC107;
+      }
+      .tab-riwayat-pelanggan{
+        margin: auto;
+        margin-bottom: 50px;
+        width: max-content;
+      }
+      .form-topup-saldo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      .form-topup-saldo label{
+        font-size: 20px;
+        color: var(--font-color);
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .form-topup-saldo input{
+        font-size: 21px;
+        text-align: center;
+        outline: none;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 100px;
+        margin: 10px 0;
+        margin-bottom: 3px;
+        color: var(--font-color);
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+      .form-topup-saldo input::placeholder{
+        color: #2D314F70;
+      }
+      /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+      .form-topup-saldo span{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+      .btn-topup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37px;
+        gap:4px;
+      }
+      .btn-topup button{
+        border: none;
+        outline: none;
+        font-size: 18px;
+        border-radius: 100px;
+        padding: 10px 25px;
+        background: #25D366;
+        color: white;
+        cursor: pointer;
+      }
+      .btn-topup span{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+
+      .form-withdraw-layout{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        grid-gap: 20px;
+        margin-top: 30px;
+      }
+      .select-style-saldo{
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px 21px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+      .select-style-saldo select{
+        width: 100%;
+        appearance: none !important;
+        font-size: 18px;
+        border: none;
+        color: var(--font-color);
+        outline: none;
+        background-color: transparent;
+      }
+      .form-withdraw{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap:8px;
+      }
+      .form-withdraw label{
+        font-size: 18px;
+        color: var(--font-color);
+      }
+      .form-withdraw input{
+        width: 100%;
+        color: var(--font-color);
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px 21px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+
+      .withdraw-content{
+        color: var(--font-color);
+        text-align: center;
+        margin-bottom: 17px;
+      }
+      .withdraw-content h5{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      .withdraw-content h2{
+        font-size: 30px;
+      }
+      /* SALDO END */
 }
 @media only screen and (min-width:1024px) and (max-width:1190px){
     .container{
@@ -7993,7 +9444,7 @@ a:hover{
     .user-btn-login span{
         font-size: 13px;
     }
-    
+
     .account-mobile{
         display: none !important;
     }
@@ -8129,7 +9580,7 @@ a:hover{
         visibility: hidden;
         border-radius: 12px;
         padding: 0 20px;
-        padding-top: 20px;  
+        padding-top: 20px;
         text-align: start;
         height: 250px;
         overflow-y: scroll;
@@ -8182,12 +9633,12 @@ a:hover{
         font-size: 15px;
     }
 
-    
+
     /* HEADER BANNER */
     .banner{
         height: 510px;
         overflow-y: hidden;
-        background-image: url(../images/texture-banner.png);    
+        background-image: url(../images/texture-banner.png);
         background-position: center;
         background-size: cover;
         border: 4px solid white;
@@ -8414,7 +9865,7 @@ a:hover{
     }
     .promo-box-video{
         width: 100%;
-        
+
     }
     .promo-box-video iframe{
         width: 100%;
@@ -8575,6 +10026,11 @@ a:hover{
         font-weight: 600;
         color: var(--font-color);
     }
+    .sort-category label{
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--font-color);
+      }
     .filter-category{
         display: flex;
         gap: 60px;
@@ -8628,8 +10084,9 @@ a:hover{
         border-radius: 100px;
         overflow: hidden;
         position: relative;
-        width: 110px;
+        width: max-content;
         color: var(--font-color);
+        padding-right: 17px;
     }
     .select-style-product select{
         border: none;
@@ -8659,7 +10116,7 @@ a:hover{
         padding: 30px 0;
         padding-top: 15px;
     }
-    
+
     .image-product-page-main {
         position: relative;
         width: 100%;
@@ -8667,7 +10124,7 @@ a:hover{
         position: relative;
         box-shadow: 0px 0px 17px 0px #2d314f1f;
     }
-    
+
     .image-product-page-main img {
         width: 100%;
         height: 100%;
@@ -8678,7 +10135,7 @@ a:hover{
         object-fit: cover;
         transition: .3s all;
     }
-    
+
     .show-image{
         opacity: 1;
     }
@@ -9282,7 +10739,7 @@ a:hover{
     .form-box-konfir{
         gap: 5px;
     }
-    
+
     .form-box label{
         font-size: 16px;
         color: var(--font-color);
@@ -9356,7 +10813,7 @@ a:hover{
         margin: 10px 0;
         margin-bottom: 20px;
     }
-    
+
     /* Hide the browser's default checkbox */
     .remind input {
         position: absolute;
@@ -9365,7 +10822,7 @@ a:hover{
         height: 0;
         width: 0;
     }
-    
+
     /* Create a custom checkbox */
     .checkmark {
         position: absolute;
@@ -9378,24 +10835,24 @@ a:hover{
         border-radius: 4px;
         margin-top: 2px;
     }
-    
+
     /* When the checkbox is checked, add a blue background */
     .remind input:checked ~ .checkmark {
         background-color: white;
     }
-    
+
     /* Create the checkmark/indicator (hidden when not checked) */
     .checkmark:after {
         content: "";
         position: absolute;
         display: none;
     }
-    
+
     /* Show the checkmark when checked */
     .remind input:checked ~ .checkmark:after {
         display: block;
     }
-    
+
     /* Style the checkmark/indicator */
     .remind .checkmark:after {
         left: 50%;
@@ -9682,7 +11139,7 @@ a:hover{
         align-items: center;
         justify-content: center;
         padding: 60px;
-        
+
     }
     .main-popup::-webkit-scrollbar{
         display: none;
@@ -9990,13 +11447,13 @@ a:hover{
         border: 2px solid transparent;
         color: var(--font-color);
       }
-      
+
       .faq-active{
         background-color: #ffffff;
         padding: 18px 20px;
         border: 2px solid var(--yellow);
       }
-      
+
       .faq-accordion:after {
         content: url('https://api.iconify.design/octicon/chevron-down-16.svg?color=%23363b5b&width=27&height=27');
         margin-bottom: -9px;
@@ -10007,13 +11464,13 @@ a:hover{
         transition: .3s all;
         font-size: 18px;
       }
-      
+
       .faq-active:after {
         content: url('https://api.iconify.design/octicon/chevron-down-16.svg?color=%23363b5b&width=27&height=27');
         margin-bottom: 2px;
         transform: rotate(180deg);
       }
-      
+
       .faq-panel {
         padding: 0 18px;
         background-color: transparent;
@@ -10194,12 +11651,438 @@ a:hover{
         color: var(--font-color);
     }
     /* LOGIN FORM END */
+
+    /* RIWAYAT PESANAN */
+    .tab-riwayat{
+        background-color: #2D314F;
+        border-radius: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 13px;
+        gap: 8px;
+        margin: 30px 0;
+        margin-bottom: 35px;
+    }
+    .tablinksRiwayat{
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        padding: 10px 19px;
+        font-size: 16px;
+        cursor: pointer;
+        color: var(--font-color);
+        font-weight: 600;
+        background-color: white;
+    }
+    .tablinksRiwayat.active-riwayat{
+        background-color: var(--yellow);
+    }
+    .tab-riwayat-content{
+        padding-bottom: 50px;
+    }
+    .dynamic-button {
+		background-color: white;
+		color: var(--font-color);
+		padding: 10px 18px;
+		border: none;
+		cursor: pointer;
+        border-radius: 100px;
+        font-weight: 500;
+        font-size: 17px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+	  }
+
+	  .popup-date {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+		z-index: 1;
+        overflow: hidden;
+        width:max-content;
+        margin-top: 5px;
+	  }
+
+	  .popup-date ul {
+		list-style: none;
+		padding: 0;
+	  }
+
+	  .popup-date li {
+		cursor: pointer;
+		padding: 13px 25px;
+		transition: background-color 0.3s;
+        font-size: 18px;
+        border-bottom: 1px solid #2D314F70;
+	  }
+
+	  .popup-date li:hover {
+		background-color: #25D366;
+	  }
+
+	  /* Opsi untuk tanggal yang dipilih */
+	  .popup-date li.selected {
+		font-weight: bold;
+		background-color: #25D366;
+		color: #fff;
+	  }
+
+	  /* Menerapkan warna pada opsi yang di-hover */
+	  .popup-date li:not(.selected):hover {
+		background-color: #25D366;
+		color: #fff;
+	  }
+
+      .pesanan-layout-top{
+        display: flex;
+        justify-content: space-between;
+      }
+      .pesanan-layout-top__box{
+        display: flex;
+      }
+      .pesanan-layout-top__box{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .sort-box{
+        display: flex;
+      }
+      .search-box-page{
+        background-color: white;
+        padding: 10px 18px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+
+      }
+      .search-box-page input{
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 17px;
+        color: var(--font-color);
+        width: 145px;
+        font-weight: 500;
+      }
+      .search-box-page input::placeholder{
+        color: #2D314F70;
+      }
+      .search-box-page iconify-icon{
+        font-size: 23px;
+        color: var(--font-color);
+      }
+
+      .sort-box{
+        display: flex;
+        gap: 10px;
+      }
+      .sort-category label{
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--font-color);
+      }
+      .order-detail{
+        font-size: 17px;
+        color: var(--font-color);
+        font-weight: 500;
+      }
+      .bg-red{
+        background: #FF3B3C2B !important;
+        color: #FF3B3C !important;
+      }
+      .bg-green{
+        background: #25D3663D !important;
+        color: #25D366 !important;
+      }
+      /* END RIWAYAT PESANAN */
+
+      /* PELANGGAN PAGE */
+      .search-box-page-pelanggan input{
+        width: 200px !important;
+      }
+      .btn-blue-download{
+        border: none;
+        outline: none;
+        padding: 11px 37px;
+        border-radius: 100px;
+        background-color: #0163F8;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        color: white;
+        gap:10px;
+        cursor: pointer;
+      }
+      .btn-blue-download iconify-icon{
+        font-size: 20px;
+      }
+      .table-layout{
+        margin-top: 30px;
+        margin-bottom: 80px;
+      }
+      .table-layout table{
+        width: 100%;
+      }
+      .table-layout table, tr, th ,td{
+        border: 2px solid #2D314F;
+        border-collapse: collapse;
+        padding: 12px;
+        text-align: center;
+        font-size: 16px;
+      }
+      .table-layout tr th:nth-child(1){
+        width: max-content;
+      }
+      .table-layout tr th:nth-child(2){
+        width: 27%;
+      }
+      .table-layout tr th:nth-child(3){
+        width: 19%;
+      }
+      .table-layout tr th:nth-child(4){
+        width: 20px;
+      }
+      .table-layout tr th:nth-child(5){
+        width: 35%;
+      }
+      .table-layout tr th:nth-child(6){
+        width: 13%;
+      }
+      .table-layout tr th{
+        color: #2D314F;
+        font-size: 17px;
+        background-color: #2D314F1A;
+      }
+      .table-layout tr td{
+        color: #2D314F;
+        background-color: #fff;
+      }
+      .btn-edit{
+        background-color: #FFCC00;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin: auto;
+        color: white;
+        border-radius: 100px;
+        padding: 8px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        color: var(--font-color);
+      }
+      /* PELANGGAN PAGE END */
+
+      /* SALDO */
+      .container-small{
+        width: 930px;
+      }
+      .table-layout-five-col tr th:nth-child(1){
+        width: 5%;
+      }
+      .table-layout-five-col tr th:nth-child(2){
+        width: 23%;
+      }
+      .table-layout-five-col tr th:nth-child(3){
+        width: 31%;
+      }
+      .table-layout-five-col tr th:nth-child(4){
+        width: 22%;
+      }
+      .table-layout-five-col tr th:nth-child(5){
+        width: 15%;
+      }
+
+      .saldo-detail{
+        padding: 32px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 30px;
+        background-color: white;
+        grid-gap: 30px;
+        box-shadow: 0px 0px 22px 0px rgba(45, 49, 79, 0.14);
+        margin-bottom:56px;
+      }
+      .saldo-form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+      .saldo-form label{
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .saldo-form input{
+        width: 100%;
+        border-radius: 100px;
+        font-size: 22px;
+        padding: 10px 18px;
+        outline: none;
+        font-weight: 600;
+      }
+      .input-black{
+        background: #2D314F0A;
+        border: 2px solid var(--font-color);
+        color: var(--font-color);
+      }
+      .input-green{
+        background: #01A5600A;
+        border: 2px solid #25D366;
+        color: #25D366;
+      }
+      .input-yellow{
+        background: #FFC1070A;
+        border: 2px solid #FFC107;
+        color: #FFC107;
+      }
+      .tab-riwayat-pelanggan{
+        margin: auto;
+        margin-bottom: 50px;
+        width: max-content;
+      }
+      .form-topup-saldo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      .form-topup-saldo label{
+        font-size: 20px;
+        color: var(--font-color);
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .form-topup-saldo input{
+        font-size: 21px;
+        text-align: center;
+        outline: none;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 100px;
+        margin: 10px 0;
+        margin-bottom: 3px;
+        color: var(--font-color);
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+      .form-topup-saldo input::placeholder{
+        color: #2D314F70;
+      }
+      /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+      .form-topup-saldo span{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+      .btn-topup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37px;
+        gap:4px;
+      }
+      .btn-topup button{
+        border: none;
+        outline: none;
+        font-size: 18px;
+        border-radius: 100px;
+        padding: 10px 25px;
+        background: #25D366;
+        color: white;
+        cursor: pointer;
+      }
+      .btn-topup span{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+
+      .form-withdraw-layout{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        grid-gap: 20px;
+        margin-top: 30px;
+      }
+      .select-style-saldo{
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px 21px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+      .select-style-saldo select{
+        width: 100%;
+        appearance: none !important;
+        font-size: 18px;
+        border: none;
+        color: var(--font-color);
+        outline: none;
+        background-color: transparent;
+      }
+      .form-withdraw{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap:8px;
+      }
+      .form-withdraw label{
+        font-size: 18px;
+        color: var(--font-color);
+      }
+      .form-withdraw input{
+        width: 100%;
+        color: var(--font-color);
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px 21px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+
+      .withdraw-content{
+        color: var(--font-color);
+        text-align: center;
+        margin-bottom: 17px;
+      }
+      .withdraw-content h5{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      .withdraw-content h2{
+        font-size: 30px;
+      }
+      /* SALDO END */
 }
 @media only screen and (min-width:1191px){
     .container{
         width: 1180px;
     }
-    
+
     .top-menu{
         background-color: var(--yellow);
         padding: 10px 0;
@@ -10523,7 +12406,7 @@ a:hover{
 
 
     /* HEADER BANNER */
-    
+
     .banner{
         height:600px;
         overflow-y: hidden;
@@ -10969,8 +12852,9 @@ a:hover{
         border-radius: 100px;
         overflow: hidden;
         position: relative;
-        width: 110px;
+        width: max-content;
         color: var(--font-color);
+        padding-right: 20px;
     }
     .select-style-product select{
         border: none;
@@ -11002,7 +12886,7 @@ a:hover{
         padding: 30px 0;
         padding-top: 15px;
     }
-    
+
     .image-product-page-main {
         position: relative;
         width: 100%;
@@ -11010,7 +12894,7 @@ a:hover{
         position: relative;
         box-shadow: 0px 0px 17px 0px #2d314f1f;
     }
-    
+
     .image-product-page-main img {
         width: 100%;
         height: 100%;
@@ -11021,7 +12905,7 @@ a:hover{
         object-fit: cover;
         transition: .3s all;
     }
-    
+
     .show-image{
         opacity: 1;
     }
@@ -11628,7 +13512,7 @@ a:hover{
     .form-box-konfir{
         gap: 5px;
     }
-    
+
     .form-box label{
         font-size: 18px;
         color: var(--font-color);
@@ -11706,7 +13590,7 @@ a:hover{
         margin: 10px 0;
         margin-bottom: 20px;
     }
-    
+
     /* Hide the browser's default checkbox */
     .remind input {
         position: absolute;
@@ -11715,7 +13599,7 @@ a:hover{
         height: 0;
         width: 0;
     }
-    
+
     /* Create a custom checkbox */
     .checkmark {
         position: absolute;
@@ -11728,24 +13612,24 @@ a:hover{
         border-radius: 4px;
         margin-top: 2px;
     }
-    
+
     /* When the checkbox is checked, add a blue background */
     .remind input:checked ~ .checkmark {
         background-color: white;
     }
-    
+
     /* Create the checkmark/indicator (hidden when not checked) */
     .checkmark:after {
         content: "";
         position: absolute;
         display: none;
     }
-    
+
     /* Show the checkmark when checked */
     .remind input:checked ~ .checkmark:after {
         display: block;
     }
-    
+
     /* Style the checkmark/indicator */
     .remind .checkmark:after {
         left: 50%;
@@ -12035,7 +13919,7 @@ a:hover{
         align-items: center;
         justify-content: center;
         padding: 60px;
-        
+
     }
     .main-popup::-webkit-scrollbar{
         display: none;
@@ -12153,7 +14037,7 @@ a:hover{
         border-radius: 20px;
         padding: 30px;
     }
-    
+
     .remind-reseller .input-cart-reseller {
         position: absolute;
         opacity: 0;
@@ -12161,7 +14045,7 @@ a:hover{
         height: 0;
         width: 0;
     }
-    
+
     .checkmark-reseller{
         position: absolute;
         bottom: 0 !important;
@@ -12177,17 +14061,17 @@ a:hover{
         position: relative;
         padding-left: 30px;
     }
-    
+
     .checkmark-reseller:after {
         content: "";
         position: absolute;
         display: none;
     }
-    
+
     .remind-reseller .input-cart-reseller:checked ~ .checkmark-reseller:after {
         display: block;
     }
-    
+
     .remind-reseller .checkmark-reseller:after {
         left: 50%;
         top: 50%;
@@ -12204,10 +14088,10 @@ a:hover{
     .cart-product-box-reseller{
         width: 100%;
         align-items: center;
-        
+
         margin-bottom: 20px;
         transition: .3s all;
-        
+
     }
     .cart-layout-reseller{
         display: grid;
@@ -12446,13 +14330,13 @@ a:hover{
         border: 2px solid transparent;
         color: var(--font-color);
       }
-      
+
       .faq-active{
         background-color: #ffffff;
         padding: 18px 20px;
         border: 2px solid var(--yellow);
       }
-      
+
       .faq-accordion:after {
         content: url('https://api.iconify.design/octicon/chevron-down-16.svg?color=%23363b5b&width=27&height=27');
         margin-bottom: -9px;
@@ -12463,13 +14347,13 @@ a:hover{
         transition: .3s all;
         font-size: 18px;
       }
-      
+
       .faq-active:after {
         content: url('https://api.iconify.design/octicon/chevron-down-16.svg?color=%23363b5b&width=27&height=27');
         margin-bottom: 2px;
         transform: rotate(180deg);
       }
-      
+
       .faq-panel {
         padding: 0 18px;
         background-color: transparent;
@@ -12704,5 +14588,431 @@ a:hover{
         color: var(--font-color);
     }
     /* LOGIN FORM END */
-}
 
+
+    /* RIWAYAT PESANAN */
+    .tab-riwayat{
+        background-color: #2D314F;
+        border-radius: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 13px;
+        gap: 13px;
+        margin: 30px 0;
+        margin-bottom: 35px;
+    }
+    .tablinksRiwayat{
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        padding: 10px 27px;
+        font-size: 18px;
+        cursor: pointer;
+        color: var(--font-color);
+        font-weight: 600;
+        background-color: white;
+    }
+    .tablinksRiwayat.active-riwayat{
+        background-color: var(--yellow);
+    }
+    .tab-riwayat-content{
+        padding-bottom: 50px;
+    }
+    .dynamic-button {
+		background-color: white;
+		color: var(--font-color);
+		padding: 11px 20px;
+		border: none;
+		cursor: pointer;
+        border-radius: 100px;
+        font-weight: 500;
+        font-size: 18px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+	  }
+
+	  .popup-date {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+		z-index: 1;
+        overflow: hidden;
+        width:max-content;
+        margin-top: 5px;
+	  }
+
+	  .popup-date ul {
+		list-style: none;
+		padding: 0;
+	  }
+
+	  .popup-date li {
+		cursor: pointer;
+		padding: 13px 25px;
+		transition: background-color 0.3s;
+        font-size: 18px;
+        border-bottom: 1px solid #2D314F70;
+	  }
+
+	  .popup-date li:hover {
+		background-color: #25D366;
+	  }
+
+	  /* Opsi untuk tanggal yang dipilih */
+	  .popup-date li.selected {
+		font-weight: bold;
+		background-color: #25D366;
+		color: #fff;
+	  }
+
+	  /* Menerapkan warna pada opsi yang di-hover */
+	  .popup-date li:not(.selected):hover {
+		background-color: #25D366;
+		color: #fff;
+	  }
+
+      .pesanan-layout-top{
+        display: flex;
+        justify-content: space-between;
+      }
+      .pesanan-layout-top__box{
+        display: flex;
+      }
+      .pesanan-layout-top__box{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .sort-box{
+        display: flex;
+      }
+      .search-box-page{
+        background-color: white;
+        padding: 11px 20px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+
+      }
+      .search-box-page input{
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 18px;
+        color: var(--font-color);
+        width: 145px;
+        font-weight: 500;
+      }
+      .search-box-page input::placeholder{
+        color: #2D314F70;
+      }
+      .search-box-page iconify-icon{
+        font-size: 24px;
+        color: var(--font-color);
+      }
+
+      .sort-box{
+        display: flex;
+        gap: 10px;
+      }
+      .sort-category label{
+        font-size: 19px;
+        font-weight: 600;
+        color: var(--font-color);
+      }
+      .order-detail{
+        font-size: 18px;
+        color: var(--font-color);
+        font-weight: 500;
+      }
+      .bg-red{
+        background: #FF3B3C2B !important;
+        color: #FF3B3C !important;
+      }
+      .bg-green{
+        background: #25D3663D !important;
+        color: #25D366 !important;
+      }
+      /* END RIWAYAT PESANAN */
+
+      /* PELANGGAN PAGE */
+      .search-box-page-pelanggan input{
+        width: 200px !important;
+      }
+      .btn-blue-download{
+        border: none;
+        outline: none;
+        padding: 11px 37px;
+        border-radius: 100px;
+        background-color: #0163F8;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        color: white;
+        gap:10px;
+        cursor: pointer;
+      }
+      .btn-blue-download iconify-icon{
+        font-size: 21px;
+      }
+      .table-layout{
+        margin-top: 30px;
+        margin-bottom: 80px;
+      }
+      .table-layout table{
+        width: 100%;
+      }
+      .table-layout table, tr, th ,td{
+        border: 2px solid #2D314F;
+        border-collapse: collapse;
+        padding: 13px;
+        text-align: center;
+        font-size: 17px;
+      }
+      .table-layout tr th:nth-child(1){
+        width: max-content;
+      }
+      .table-layout tr th:nth-child(2){
+        width: 18%;
+      }
+      .table-layout tr th:nth-child(3){
+        width: 15%;
+      }
+      .table-layout tr th:nth-child(4){
+        width: 13%;
+      }
+      .table-layout tr th:nth-child(5){
+        width: 35%;
+      }
+      .table-layout tr th:nth-child(6){
+        width: 13%;
+      }
+      .table-layout tr th{
+        color: #2D314F;
+        font-size: 18px;
+        background-color: #2D314F1A;
+      }
+      .table-layout tr td{
+        color: #2D314F;
+        background-color: #fff;
+      }
+      .btn-edit{
+        background-color: #FFCC00;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin: auto;
+        color: white;
+        border-radius: 100px;
+        padding: 8px 20px;
+        cursor: pointer;
+        font-size: 17px;
+        color: var(--font-color);
+      }
+      /* PELANGGAN PAGE END */
+
+      /* SALDO */
+      .container-small{
+        width: 930px;
+      }
+      .table-layout-five-col tr th:nth-child(1){
+        width: 5%;
+      }
+      .table-layout-five-col tr th:nth-child(2){
+        width: 23%;
+      }
+      .table-layout-five-col tr th:nth-child(3){
+        width: 31%;
+      }
+      .table-layout-five-col tr th:nth-child(4){
+        width: 22%;
+      }
+      .table-layout-five-col tr th:nth-child(5){
+        width: 15%;
+      }
+
+      .saldo-detail{
+        padding: 32px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 30px;
+        background-color: white;
+        grid-gap: 30px;
+        box-shadow: 0px 0px 22px 0px rgba(45, 49, 79, 0.14);
+        margin-bottom:56px;
+      }
+      .saldo-form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+      .saldo-form label{
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .saldo-form input{
+        width: 100%;
+        border-radius: 100px;
+        font-size: 22px;
+        padding: 10px 18px;
+        outline: none;
+        font-weight: 600;
+      }
+      .input-black{
+        background: #2D314F0A;
+        border: 2px solid var(--font-color);
+        color: var(--font-color);
+      }
+      .input-green{
+        background: #01A5600A;
+        border: 2px solid #25D366;
+        color: #25D366;
+      }
+      .input-yellow{
+        background: #FFC1070A;
+        border: 2px solid #FFC107;
+        color: #FFC107;
+      }
+      .tab-riwayat-pelanggan{
+        margin: auto;
+        margin-bottom: 50px;
+        width: max-content;
+      }
+      .form-topup-saldo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      .form-topup-saldo label{
+        font-size: 20px;
+        color: var(--font-color);
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .form-topup-saldo input{
+        font-size: 21px;
+        text-align: center;
+        outline: none;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 100px;
+        margin: 10px 0;
+        margin-bottom: 3px;
+        color: var(--font-color);
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+      .form-topup-saldo input::placeholder{
+        color: #2D314F70;
+      }
+      /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+      .form-topup-saldo span{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+      .btn-topup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37px;
+        gap:4px;
+      }
+      .btn-topup button{
+        border: none;
+        outline: none;
+        font-size: 18px;
+        border-radius: 100px;
+        padding: 10px 25px;
+        background: #25D366;
+        color: white;
+        cursor: pointer;
+      }
+      .btn-topup span{
+        font-size: 16px;
+        color: var(--font-color);
+      }
+
+      .form-withdraw-layout{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        grid-gap: 20px;
+        margin-top: 30px;
+      }
+      .select-style-saldo{
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px 21px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+      .select-style-saldo select{
+        width: 100%;
+        appearance: none !important;
+        font-size: 18px;
+        border: none;
+        color: var(--font-color);
+        outline: none;
+        background-color: transparent;
+      }
+      .form-withdraw{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap:8px;
+      }
+      .form-withdraw label{
+        font-size: 18px;
+        color: var(--font-color);
+      }
+      .form-withdraw input{
+        width: 100%;
+        color: var(--font-color);
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px 21px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        box-shadow: 0px 0px 20px 0px rgba(45, 49, 79, 0.14);
+      }
+
+      .withdraw-content{
+        color: var(--font-color);
+        text-align: center;
+        margin-bottom: 17px;
+      }
+      .withdraw-content h5{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      .withdraw-content h2{
+        font-size: 30px;
+      }
+      /* SALDO END */
+}

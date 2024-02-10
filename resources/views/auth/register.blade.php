@@ -59,7 +59,7 @@ p {
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <div class="row">
                         <div class="col-md-10">
-                            <h2><b>Register Reseller</b></h2>
+                            <h2><b>Register</b></h2>
                         </div>
                         <div class="col-md-2 d-flex gap-2">
                             <button class="btn btn-primary" onclick="submitForm()">
@@ -90,6 +90,18 @@ p {
                                 @csrf
                                 <div id="detail_product_tab" class="tab-content">
                                     <div class="row">
+                                        <div class="col-md-12 mb-3">
+                                                <label for="roles">Register as</label>
+                                                <div class="select-style">
+                                                    <select name="roles" class="form-control" id="roles" required>
+                                                        <option value="1">Distributor</option>
+                                                        <option value="2">Agen</option>
+                                                        <option value="3">Sub Agen</option>
+                                                        <option value="4">Reseller</option>
+                                                    </select>
+                                                    <iconify-icon icon="octicon:chevron-down-12"></iconify-icon>
+                                                </div>
+                                        </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="first_name" class="form-label">First Name:</label>

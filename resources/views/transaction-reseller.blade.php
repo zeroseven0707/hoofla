@@ -49,14 +49,14 @@
                                                 <tr>
                                                     <td>Nama</td>
                                                     <td>Alamat Pengiriman</td>
-                                                    <td>No.Telpon</td>
+                                                    {{-- <td>No.Telpon</td> --}}
                                                     <td>Catatan</td>
                                                     <td>Jasa Pengiriman</td>
                                                 </tr>
                                                 <tr>
                                                     <td>{{ $transaction->penerima }}</td>
-                                                    <td>{{ $transaction->provinsi }}, {{ $transaction->kota }}, {{ $transaction->kecamatan }}, {{ $transaction->alamat_lengkap }}</td>
-                                                    <td>{{ $transaction->pelanggan->no_telp }}</td>
+                                                    <td>{{ $transaction->province }}, {{ $transaction->kota }}, {{ $transaction->kecamatan }}, {{ $transaction->alamat_lengkap }}</td>
+                                                    {{-- <td>{{ $transaction->pelanggan->no_telp }}</td> --}}
                                                     <td>{{ $transaction->catatan }}</td>
                                                     <td>{{ $transaction->shipping_method }}</td>
                                                 </tr>

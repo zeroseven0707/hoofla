@@ -25,6 +25,8 @@ return new class extends Migration
             $table->decimal('sell_price', 10, 2);
             $table->decimal('reseller_sell_price', 10, 2);
             $table->decimal('dropshipper_sell_price', 10, 2)->nullable();
+            $table->decimal('agen_sell_price', 10, 2)->nullable();
+            $table->decimal('distributor_sell_price', 10, 2)->nullable();
             $table->integer('item_category_id');
             $table->string('category_name')->nullable();
             $table->string('sub_category_name')->nullable();

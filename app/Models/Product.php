@@ -9,9 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Product extends Model
 {
     use HasFactory;
-    protected $guarded = [
-        'id'
-    ];
+    protected $guarded = [];
     protected $casts = [
         'images' => 'json',
     ];

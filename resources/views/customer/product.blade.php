@@ -101,8 +101,15 @@
         <div class="product-name-price">
             <h1>{{ $product->item_group_name }}</h1>
             @auth
+            @if(auth()->user()->level == 'reseller')
             <span>Rp. {{ number_format($product->reseller_sell_price) }} ,-</span>
-            @else
+            @elseif(auth()->user()->level == 'agen')
+            <span>Rp. {{ number_format($product->agen_sell_price) }} ,-</span>
+            @elseif(auth()->user()->level == 'sub agen')
+            <span>Rp. {{ number_format($product->sub_agen_sell_price) }} ,-</span>
+            @elseif(auth()->user()->level == 'distributor')
+            <span>Rp. {{ number_format($product->distributor_sell_price) }} ,-</span>
+            @endif
             <span>Rp. {{ number_format($product->sell_price) }} ,-</span>
             @endauth
         </div>
@@ -115,15 +122,27 @@
             <span>Varian :</span>
             <div class="button-layout-mobile">
                 <div class="button-layout">
-                    @foreach ($colors as $color)
+                    <div class="button-layout-mobile">
+                        <div class="size-button">
+                        @foreach ($variation as $variations)
+                            <div class="choose-size-box size-{{$variations->id}}">
+                                <input type="checkbox" id="size-{{$variations->id}}" value="{{$variations->id}}" name="sizeId" onchange="updateCheckbox('size-{{$variations->id}}')"/>
+                                <div class="size-content">
+                                    <span>{{$variations->warna}} ({{$variations->size}})</span>
+                                </div>
+                            </div>
+                        @endforeach
+                        </div>
+                    </div>
+                    {{-- @foreach ($colors as $color)
                         <button class="btn-product-style tablinks" data-color="{{ $color }}" type="button">{{ $color }}</button>
-                    @endforeach
+                    @endforeach --}}
                 </div>
             </div>
         </div>
-        <div class="button-choose-layout">
+
+        {{-- <div class="button-choose-layout">
             <span>Ukuran :</span>
-            {{-- @dd($variations    ) --}}
             @foreach ($colors as $colo)
             <div id="{{ $colo }}" class="tabcontent tab-content-size">
                 <div class="button-layout-mobile">
@@ -136,37 +155,19 @@
                             </div>
                         </div>
                         @endforeach
-                        {{-- <div class="choose-size-box size-l">
-                            <input type="checkbox" id="size-l" onchange="updateCheckbox('size-l')"/>
-                            <div class="size-content">
-                                <span>L (sabi 1)</span>
-                            </div>
-                        </div> --}}
-                        {{-- <div class="choose-size-box size-xl">
-                            <input type="checkbox" id="size-xl" onchange="updateCheckbox('size-xl')"/>
-                            <div class="size-content">
-                                <span>XL (sabi 1)</span>
-                            </div>
-                        </div>
-                        <div class="choose-size-box size-xxl">
-                            <input type="checkbox" id="size-xxl" onchange="updateCheckbox('size-xxl')"/>
-                            <div class="size-content">
-                                <span>XXL (sabi 1)</span>
-                            </div>
-                        </div> --}}
                     </div>
                 </div>
             </div>
             @endforeach
-        </div>
-        <p class="stock-product-page"><span>20</span> Produk Tersedia</p>
+        </div> --}}
+        <p class="stock-product-page"><span>{{ $count }}</span> Stok Tersedia</p>
         <div class="button-choose-layout">
             <span>Jumlah Produk :</span>
             <div class="layout-flex">
                 <div class='qty-layout'>
-                    <button onclick="decreaseQty()"><iconify-icon icon="fa6-solid:minus"></iconify-icon></button>
+                    <button onclick="decreaseQty()" type="button"><iconify-icon icon="fa6-solid:minus"></iconify-icon></button>
                     <input type="text" name="qty" value="1" id="qty"/>
-                    <button onclick="increaseQty()"><iconify-icon icon="fa6-solid:plus"></iconify-icon></button>
+                    <button onclick="increaseQty()" type="button"><iconify-icon icon="fa6-solid:plus"></iconify-icon></button>
                 </div>
                 <button type="button" class="add-cart" id="addToCartBtn"><iconify-icon icon="mdi:cart"></iconify-icon> Masukan Keranjang</button>
             </div>
@@ -350,7 +351,6 @@
     </div>
 </div>
 
-
 <!-- SCRIPT UNTUK TAB SPESIFIKASI -->
 <script>
     function openDesc(evt, descName) {
@@ -392,27 +392,6 @@ document.getElementById("defaultOpenNew").click();
         qtyElement.value = qty;
     }
 </script>
-
-<!-- SCRIPT UNTUK BUTTON PILIH UKURAN SIZE -->
-<script>
-    function updateCheckbox(checkboxId) {
-      var checkboxes = document.querySelectorAll('.choose-size-box input[type="checkbox"]');
-      checkboxes.forEach(function (checkbox) {
-        var sizeContent = checkbox.nextElementSibling.querySelector("span");
-        if (checkbox.id === checkboxId) {
-          checkbox.checked = true;
-          checkbox.parentNode.classList.add('active');
-          sizeContent.style.opacity =1;
-        } else {
-          checkbox.checked = false;
-          checkbox.parentNode.classList.remove('active');
-          sizeContent.style.opacity = checkbox.disabled ? 0.3 : 1;
-        }
-      });
-    }
-
-  </script>
-
 <!-- SCRIPT UNTUK MEMILIH WARNA DAN GAMBAR DIUBAH -->
 <script>
     const tabContents = document.querySelectorAll(".tabcontent");
@@ -504,12 +483,59 @@ document.getElementById("defaultOpenNew").click();
                 }
             });
             } else {
-                console.error('Pilih ukuran dan warna sebelum menambahkan ke keranjang.');
+                Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Pilih variant sebelum menambahkan ke keranjang.!",
+                footer: ''
+                });
             }
         }
         document.getElementById('addToCartBtn').addEventListener('click', function() {
         addToCart(); // Memanggil fungsi addToCart() saat tombol "ADD" ditekan
         });
     </script>
+    <!-- Tambahkan ini di dalam tag <script> pada halaman Anda -->
+        <script>
+            function updateCheckbox(sizeId) {
+                var checkboxes = document.querySelectorAll('.choose-size-box input[type="checkbox"]');
+                checkboxes.forEach(function (checkbox) {
+                    var sizeContent = checkbox.nextElementSibling.querySelector("span");
+                    var isChecked = checkbox.checked;
+
+                    if (checkbox.id === sizeId && isChecked) {
+                        // Ambil ID variations dari ID checkbox yang dicentang
+                        var variationsId = checkbox.value;
+
+                        // Kirim permintaan AJAX untuk memeriksa stok
+                        var xhr = new XMLHttpRequest();
+                        xhr.open('GET', '/cek-stok/' + variationsId, true);
+
+                        xhr.onload = function() {
+                            if (xhr.status == 200) {
+                                // Update tampilan stok
+                                var response = JSON.parse(xhr.responseText);
+                                document.querySelector('.stock-product-page span').textContent = response.stok;
+                            } else {
+                                console.error('Error checking stock:', xhr.statusText);
+                            }
+                        };
+
+                        xhr.onerror = function() {
+                            console.error('Request failed');
+                        };
+
+                        xhr.send();
+                    }
+
+                    // Sesuaikan logika untuk tampilan checkbox dan sizeContent sesuai kebutuhan
+                    checkbox.checked = (checkbox.id === sizeId);
+                    checkbox.parentNode.classList.toggle('active', checkbox.checked);
+                    sizeContent.style.opacity = isChecked ? 1 : (checkbox.disabled ? 0.3 : 1);
+                });
+            }
+        </script>
+
+
 @endsection
 

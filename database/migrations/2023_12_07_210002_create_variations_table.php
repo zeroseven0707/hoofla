@@ -23,6 +23,8 @@ return new class extends Migration
             $table->double('price');
             $table->double('reseller_price');
             $table->double('dropshipper_price');
+            $table->double('agen_price');
+            $table->double('distributor_price');
             $table->integer('stok');
             $table->timestamps();
         });

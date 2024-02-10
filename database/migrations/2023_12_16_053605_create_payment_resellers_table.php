@@ -19,6 +19,9 @@ return new class extends Migration
             $table->double('total');
             $table->enum('status',['progress','paid']);
             $table->foreignId('reseller_id');
+            $table->foreignId('agen_id');
+            $table->foreignId('subagen_id');
+            $table->foreignId('distributor_id');
             $table->timestamps();
         });
     }

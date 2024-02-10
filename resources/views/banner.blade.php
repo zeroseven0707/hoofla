@@ -1,9 +1,17 @@
     @extends('layouts.admin.template')
     @section('content')
     <style>
-        .button-display button {
-    margin-right: 5px;
-}
+    .button-display button {
+        margin-right: 5px;
+    }
+    .form-check-input {
+        margin-right: 8px;
+    }
+
+    .form-check-label {
+        display: flex;
+        align-items: center;
+    }
 </style>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">New</button>
@@ -20,43 +28,40 @@
                 <h2 class="mb-4">Banner Form</h2>
                 <form action="{{ route('banners.store') }}" method="post" enctype="multipart/form-data">
                     @csrf
-                    <div class="form-check">
-                        <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="type" id="" value="1">
-                        bqnner Tipe 1
-                      </label>
+
+                    <div class="form-check form-element" data-type="1">
+                        <input type="radio" class="form-check-input" name="type" value="1" id="r1" onchange="handleBannerTypeChange()">
+                        <label class="form-check-label" for="r1">Banner Tipe 1</label>
                     </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="type" id="" value="2">
-                        Banner Tipe 2
-                      </label>
+
+                    <div class="form-check form-element" data-type="2">
+                        <input type="radio" class="form-check-input" name="type" value="2" id="r2" onchange="handleBannerTypeChange()">
+                        <label class="form-check-label" for="r2">Banner Tipe 2</label>
                     </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="type" id="" value="3">
-                        Untuk di body
-                      </label>
+
+                    <div class="form-check form-element" data-type="3">
+                        <input type="radio" class="form-check-input" name="type" value="3" id="r3" onchange="handleBannerTypeChange()">
+                        <label class="form-check-label" for="r3">Untuk di body</label>
                     </div>
-                    <div class="mb-3">
+
+                    <div class="mb-3 form-element" data-type="2" id="limage">
                         <label for="image" class="form-label">Image Upload</label>
                         <input type="file" class="form-control" id="image" name="image" accept="image/*">
                     </div>
 
-                    <div class="mb-3">
-                        <label for="text_1" class="form-label">Text 1</label>
-                        <input type="text" class="form-control" id="text_1" name="text_1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="text_2" class="form-label">Text 2</label>
-                        <input type="text" class="form-control" id="text_2" name="text_2">
-                    </div>
-                    <div class="mb-3">
-                        <label for="text_3" class="form-label">Text 3</label>
-                        <input type="text" class="form-control" id="text_3" name="text_3">
+                    <div class="mb-3 form-element" data-type="2" id="lselect">
+                        <div class="form-group">
+                            <label for="my-select">Product yang dijadikan banner</label>
+                            <select id="my-select" class="form-control" name="product_id">
+                                <option>Pilih Product</option>
+                                @foreach ($product as $item)
+                                    <option value="{{ $item['id'] }}">{{ $item['item_group_name'] }}</option>
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3 form-element" data-type="1" id="llink">
                         <label for="link" class="form-label">Link</label>
                         <input type="text" class="form-control" id="link" name="link" placeholder="https://example.com">
                     </div>
@@ -104,49 +109,31 @@
                           <div class="modal-body">
                             <div class="container mt-5">
                                 <h2 class="mb-4">Banner Form</h2>
-
                                 <form action="{{ route('banners.update', $item->id) }}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     @method('PUT')
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="type" id="" value="1" {{ ($item['type'] == 1)?'checked':'' }}>
-                                        Tipe 1
-                                      </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="type" id="" value="2" {{ ($item['type'] == 2)?'checked':'' }}>
-                                        Tipe 2
-                                      </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="type" id="" value="3" {{ ($item['type'] == 3)?'checked':'' }}>
-                                        Tipe 3
-                                      </label>
-                                    </div>
-                                    <div class="mb-3">
+                                    <div class="mb-3 form-element" data-type="2" id="himage">
                                         <label for="image" class="form-label">Image Upload</label>
                                         <input type="file" class="form-control" id="image" name="image" accept="image/*">
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="text_1" class="form-label">Text 1</label>
-                                        <input type="text" class="form-control" id="text_1" name="text_1" value="{{ $item['text_1'] }}">
+                                    @if ($item['type'] == 1)
+                                    <div class="mb-3 form-element" data-type="2" id="hselect">
+                                        <div class="form-group">
+                                            <label for="my-select">Product yang dijadikan banner</label>
+                                            <select id="my-select" class="form-control" name="product_id" required>
+                                                <option>Pilih Product</option>
+                                                @foreach ($product as $item)
+                                                    <option value="{{ $item['id'] }}">{{ $item['item_group_name'] }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="text_2" class="form-label">Text 2</label>
-                                        <input type="text" class="form-control" id="text_2" name="text_2" value="{{ $item['text_2'] }}">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="text_3" class="form-label">Text 3</label>
-                                        <input type="text" class="form-control" id="text_3" name="text_3" value="{{ $item['text_3'] }}">
-                                    </div>
-                                    <div class="mb-3">
+                                    @else
+                                    <div class="mb-3 form-element" data-type="1" id="hlink">
                                         <label for="link" class="form-label">Link</label>
-                                        <input type="text" class="form-control" id="link" value="{{ $item['link'] }}" name="link" placeholder="https://example.com">
+                                        <input type="text" class="form-control" id="link" name="link" value="{{ $item['link'] }}">
                                     </div>
-
+                                    @endif
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>
                             </div>
@@ -162,4 +149,84 @@
             @endforeach
         </tbody>
 </table>
+<script>
+function handleBannerTypeChange() {
+    var bannerType = document.querySelector('input[name="type"]:checked').value;
+
+    // Dapatkan elemen-elemen form yang ingin ditampilkan atau disembunyikan
+    var imageInput = document.getElementById('limage');
+    var productSelect = document.getElementById('lselect');
+    var linkInput = document.getElementById('llink');
+
+    // Tentukan elemen-elemen yang akan ditampilkan berdasarkan tipe banner yang dipilih
+    var elementsToShow = [imageInput];
+
+    if (bannerType === '1') {
+        elementsToShow.push(productSelect);
+        // Sembunyikan elemen productSelect jika tipe banner adalah 1
+        productSelect.style.display = 'block';
+        linkInput.style.display = 'none';
+    } else {
+        // Tampilkan elemen productSelect jika tipe banner adalah 2 atau 3
+        elementsToShow.push(linkInput);
+        linkInput.style.display = 'block';
+    }
+
+    // Dapatkan semua elemen form
+    var allFormElements = [imageInput, productSelect, linkInput];
+
+    // Sembunyikan elemen-elemen yang tidak termasuk dalam elementsToShow
+    var elementsToHide = Array.from(allFormElements).filter(element => !elementsToShow.includes(element));
+
+    // Terapkan gaya untuk menyembunyikan elemen-elemen yang tidak diperlukan
+    elementsToHide.forEach(element => {
+        element.style.display = 'none';
+    });
+
+    // Tampilkan elemen-elemen yang diperlukan
+    elementsToShow.forEach(element => {
+        element.style.display = 'block';
+    });
+}
+
+function handleBannerTypeChangeUpdate() {
+    var bannerType = document.querySelector('input[name="type"]:checked').value;
+
+    // Dapatkan elemen-elemen form yang ingin ditampilkan atau disembunyikan
+    var imageInput = document.getElementById('himage');
+    var productSelect = document.getElementById('hselect');
+    var linkInput = document.getElementById('hlink');
+
+    // Tentukan elemen-elemen yang akan ditampilkan berdasarkan tipe banner yang dipilih
+    var elementsToShow = [imageInput];
+
+    if (bannerType === '1') {
+        elementsToShow.push(productSelect);
+        // Sembunyikan elemen productSelect jika tipe banner adalah 1
+        productSelect.style.display = 'block';
+        linkInput.style.display = 'none';
+    } else {
+        // Tampilkan elemen productSelect jika tipe banner adalah 2 atau 3
+        elementsToShow.push(linkInput);
+        linkInput.style.display = 'block';
+    }
+
+    // Dapatkan semua elemen form
+    var allFormElements = [imageInput, productSelect, linkInput];
+
+    // Sembunyikan elemen-elemen yang tidak termasuk dalam elementsToShow
+    var elementsToHide = Array.from(allFormElements).filter(element => !elementsToShow.includes(element));
+
+    // Terapkan gaya untuk menyembunyikan elemen-elemen yang tidak diperlukan
+    elementsToHide.forEach(element => {
+        element.style.display = 'none';
+    });
+
+    // Tampilkan elemen-elemen yang diperlukan
+    elementsToShow.forEach(element => {
+        element.style.display = 'block';
+    });
+}
+</script>
+
 @endsection

@@ -29,7 +29,16 @@
     "autoload": {
         "files": [
             "app/Helper/logo.php",
-            "app/Helper/category.php"
+            "app/Helper/category.php",
+            "app/Helper/facebook.php",
+            "app/Helper/instagram.php",
+            "app/Helper/youtube.php",
+            "app/Helper/whatsapp1.php",
+            "app/Helper/whatsapp2.php",
+            "app/Helper/whatsapp3.php",
+            "app/Helper/shopee.php",
+            "app/Helper/tiktok.php",
+            "app/Helper/token.php"
         ],
         "psr-4": {
             "App\\": "app/",

@@ -82,7 +82,7 @@
             </div>
             <div class="form-box">
                 <label for="">Nomor Telepon</label>
-                <input type="text" value="{{ $item->pelanggan->no_telp }}">
+                {{-- <input type="text" value="{{ $item->pelanggan->no_telp }}"> --}}
             </div>
             <div class="form-box">
                 <label for="">Alamat Penerima</label>
@@ -92,15 +92,15 @@
         <div class="cart-product-box-pesanan-four">
             <div>
                 <label class="remind">
-                    <input type="checkbox" name="code_inv[]" value="{{ $item['code_inv'] }}" required>
-                    <span class="checkmark"></span>
+                    {{-- <input type="checkbox" name="code_inv[]" value="{{ $item['code_inv'] }}" required>
+                    <span class="checkmark"></span> --}}
                      {{  $item['code_inv']  }}
                 </label>
             </div>
             {{-- <span>Komisi Rp {{ number_format($item['commission']) }} -,</span> --}}
             <div class="send-to">
                 <iconify-icon icon="mdi:truck"></iconify-icon>
-                <span>{{ $item->pelanggan->name }}</span>
+                {{-- <span>{{ $item->pelanggan->name }}</span> --}}
             </div>
 
         </div>
@@ -109,19 +109,19 @@
 </div>
 <div class="checkout-button-pesanan checkout-button container">
     <div class="checkout-button-layout container">
-        <div>
+        {{-- <div>
             <label class="remind">
                 <input type="checkbox" name="semua" id="selectAllCheckbox" required>
                 <span class="checkmark"></span>
                 Pilih Semua
             </label>
-        </div>
-        <button class="checkout-button__option">
+        </div> --}}
+        {{-- <button class="checkout-button__option">
             1 Pesanan dipilih
-        </button>
+        </button> --}}
         <div class="total-produk-pesanan total-produk">
-            <span>Total (1 Produk):</span>
-            <h3>Rp. 121.000 ,-</h3>
+            <span>Total ({{$count}} Transaksi):</span>
+            <h3>Rp. {{ number_format($payment->total) }},-</h3>
         </div>
         <div class="button-checkout-pesanan">
             <a href="">

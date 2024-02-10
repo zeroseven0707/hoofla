@@ -40,7 +40,7 @@
 <div class="section-cta container">
     <h1>Jadilah Reseller produk kami</h1>
     <p>Bergabunglah dengan program reseller kami dan nikmati peluang untuk mendapatkan penghasilan tambahan dengan menjual produk berkualitas kami</p>
-    <a href="#"><button>Gabung Sekarang</button></a>
+    <a href="/register"><button>Gabung Sekarang</button></a>
     <img src="images/dompet.svg" alt="" class="icon-cta-1">
     <img src="images/bag.svg" alt="" class="icon-cta-2">
 </div>

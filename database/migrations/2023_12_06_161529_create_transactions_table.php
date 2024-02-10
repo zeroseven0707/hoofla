@@ -16,8 +16,9 @@ return new class extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
             $table->string('code_inv')->unique();
-            $table->enum('type',['default','reseller','dropshipper'])->default('default');
+            $table->enum('type',['default','distributor','reseller','dropshipper','agen','sub agen'])->default('default');
             $table->foreignId('pelanggan_id')->nullable();
+            $table->foreignId('distributor_id')->nullable();
             $table->foreignId('reseller_id')->nullable();
             $table->foreignId('dropshipper_id')->nullable();
             $table->foreignId('payment_reseller')->nullable();
